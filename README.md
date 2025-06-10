@@ -50,31 +50,5 @@ QuestIsland is structured into 4 key scenes, each with a distinct function. Game
 
 ## System Infrastructure
 
-This section outlines the relationships between core scripts and managers in the project. Each system is modular, with a clean responsibility separation.
 
-GameManager
-├── PlayerController
-│   ├── Handles movement, rotation, and booth interaction
-│   └── References TriviaManager, HealthSystem
-│
-├── TriviaManager
-│   ├── Loads current booth questions
-│   ├── Tracks correct/wrong answers
-│   └── Unlocks next booth upon success
-│
-├── EnemyManager
-│   ├── Controls enemy patrol paths
-│   └── Applies damage on collision
-│
-├── HealthSystem
-│   ├── Tracks remaining hearts
-│   └── Updates heart UI and visual feedback (color change)
-│
-├── StateManager (DontDestroyOnLoad)
-│   ├── Tracks current booth, player health
-│   └── Maintains state between Game and Trivia scenes
-│
-└── SceneController
-    ├── Manages switching between Menu, Game, Trivia, and End scenes
-    └── Handles restart logic on game over
 
