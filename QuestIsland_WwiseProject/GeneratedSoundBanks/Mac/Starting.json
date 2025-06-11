@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "399468041",
+    "Type": "User",
+    "GUID": "{B74F2C62-DE4A-45CF-BE32-3A0C4EF054E0}",
+    "Language": "SFX",
+    "Hash": "{6F43C3FD-F552-1B48-5A3D-B416C3CCE535}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Starting",
+    "ShortName": "Starting",
+    "Path": "Starting.bnk",
+    "Media": [
+     {
+      "Id": "1073633020",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Running a Little Late (Instrumental Version) - Katharine Appleton.wav",
+      "CachePath": "38/{38C506F6-261E-FAB9-0ADF-E12217ECB46C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1035306431",
+      "Name": "Play_StartMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_StartMusic",
+      "GUID": "{436DEA4D-4C0A-478E-901F-7D0F57A3E471}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1073633020"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C6576544-CF1F-8DF9-B1D3-BBDD9CA349EF}"
+ }
+}

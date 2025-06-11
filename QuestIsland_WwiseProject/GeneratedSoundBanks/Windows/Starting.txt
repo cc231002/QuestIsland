@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1035306431	Play_StartMusic			\Default Work Unit\Play_StartMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1073633020	ES_Running a Little Late (Instrumental Version) - Katharine Appleton	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\38\{38C506F6-261E-FAB9-0ADF-E12217ECB46C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Start\StartMusic\ES_Running a Little Late (Instrumental Version) - Katharine Appleton		50795056
+
