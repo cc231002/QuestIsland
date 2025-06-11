@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_ButtonClick" ID="{0AE59854-505F-4590-B75B-16B7D79EE172}">
+					<ChildrenList>
+						<Action Name="" ID="{22F825F4-D2C4-48DB-A731-80A34F1B44C8}" ShortID="431522665">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ButtonClick" ID="{2C5C5EA0-B1B5-4EB5-ABDB-7CB545636F6E}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

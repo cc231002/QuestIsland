@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1035306431	Play_StartMusic			\Default Work Unit\Play_StartMusic	
+	3548535810	Play_ButtonClick			\Default Work Unit\Play_ButtonClick	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1073633020	ES_Running a Little Late (Instrumental Version) - Katharine Appleton	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\38\{38C506F6-261E-FAB9-0ADF-E12217ECB46C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Start\StartMusic\ES_Running a Little Late (Instrumental Version) - Katharine Appleton		50795056
+	909166354	ES_Select, Soft Round Pluck, Short, Reverb - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\51\{516D4762-8635-9753-4264-69DDC3D22F9A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Start\ButtonClick\ES_Select, Soft Round Pluck, Short, Reverb - Epidemic Sound		116752
+	1073633020	ES_Running a Little Late (Instrumental Version) - Katharine Appleton	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\17\{17A90131-E4FB-F03A-6305-128A1A6AD4A2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Start\StartMusic\ES_Running a Little Late (Instrumental Version) - Katharine Appleton		50795056
 

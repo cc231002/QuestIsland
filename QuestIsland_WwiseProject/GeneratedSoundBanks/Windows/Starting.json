@@ -10,21 +10,43 @@
     "Type": "User",
     "GUID": "{B74F2C62-DE4A-45CF-BE32-3A0C4EF054E0}",
     "Language": "SFX",
-    "Hash": "{6F43C3FD-F552-1B48-5A3D-B416C3CCE535}",
+    "Hash": "{8CB6AF51-A46A-13CD-0CA9-AFB2A8C639F1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Starting",
     "ShortName": "Starting",
     "Path": "Starting.bnk",
     "Media": [
+     {
+      "Id": "909166354",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Select, Soft Round Pluck, Short, Reverb - Epidemic Sound.wav",
+      "CachePath": "51/{516D4762-8635-9753-4264-69DDC3D22F9A}.wem"
+     },
      {
       "Id": "1073633020",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Running a Little Late (Instrumental Version) - Katharine Appleton.wav",
-      "CachePath": "38/{38C506F6-261E-FAB9-0ADF-E12217ECB46C}.wem"
+      "CachePath": "17/{17A90131-E4FB-F03A-6305-128A1A6AD4A2}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "3548535810",
+      "Name": "Play_ButtonClick",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ButtonClick",
+      "GUID": "{0AE59854-505F-4590-B75B-16B7D79EE172}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6437257",
+      "DurationMax": "0.6437257",
+      "MediaRefs": [
+       {
+        "Id": "909166354"
+       }
+      ]
+     },
      {
       "Id": "1035306431",
       "Name": "Play_StartMusic",
@@ -40,6 +62,6 @@
     ]
    }
   ],
-  "FileHash": "{8D19C825-7ECE-5567-8BE9-1EB1F9FF7D43}"
+  "FileHash": "{0971187B-E9ED-2776-04A4-CF0102091DAE}"
  }
 }
