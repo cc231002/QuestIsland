@@ -5,12 +5,18 @@ using System.Collections;
 public class MainMenu : MonoBehaviour
 {
     private const string ButtonClickEvent = "Play_ButtonClick";
-    private const float SceneLoadDelay = 0.4f;
+    private const float SceneLoadDelay = 0.3f; // Adjust depending on your sound length
 
     public void StartGame()
     {
         PlayClickSound();
         StartCoroutine(LoadSceneWithDelay());
+    }
+
+    public void RestartGame()
+    {
+        PlayClickSound();
+        StartCoroutine(RestartWithDelay());
     }
 
     public void QuitGame()
@@ -28,6 +34,12 @@ public class MainMenu : MonoBehaviour
     {
         yield return new WaitForSeconds(SceneLoadDelay);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    private IEnumerator RestartWithDelay()
+    {
+        yield return new WaitForSeconds(SceneLoadDelay);
+        SceneManager.LoadScene("GameScene");
     }
 
     private IEnumerator QuitWithDelay()
