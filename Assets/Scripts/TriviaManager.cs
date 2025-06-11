@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI; // Add this for Button
 
 public class TriviaManager : MonoBehaviour
 {
@@ -44,6 +45,8 @@ public class TriviaManager : MonoBehaviour
     // UI References
     public TMP_Text questionTextUI;
     public TMP_Text[] answerTextUIs;
+
+    public Button[] answerButtons; // Buttons A, B, C, D
 
     private List<Question> selectedQuestions = new List<Question>();
     private int currentQuestionIndex = 0;
@@ -104,13 +107,28 @@ public class TriviaManager : MonoBehaviour
         Question q = selectedQuestions[currentQuestionIndex];
         questionTextUI.text = q.question;
 
-        for (int i = 0; i < answerTextUIs.Length; i++)
-        {
-            if (i < q.options.Count)
-                answerTextUIs[i].text = $"{q.options[i].key}: {q.options[i].value}";
-            else
-                answerTextUIs[i].text = "";
-        }
+        for (int i = 0; i < answerButtons.Length; i++)
+{
+    if (i < q.options.Count)
+    {
+        string optionKey = q.options[i].key;
+
+        // Set the text of the button
+        TMP_Text buttonText = answerButtons[i].GetComponentInChildren<TMP_Text>();
+        buttonText.text = $"{optionKey}: {q.options[i].value}";
+
+        // Clear previous listeners to avoid stacking
+        answerButtons[i].onClick.RemoveAllListeners();
+
+        // Add a listener for this specific option
+        answerButtons[i].onClick.AddListener(() => CheckAnswer(optionKey));
+    }
+    else
+    {
+        answerButtons[i].gameObject.SetActive(false);
+    }
+}
+
     }
 
     void CheckAnswer(string selectedOption)
