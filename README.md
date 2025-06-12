@@ -50,5 +50,6 @@ QuestIsland is structured into 4 key scenes, each with a distinct function. Game
 
 ## System Infrastructure
 
+![SystemDiagram](https://github.com/user-attachments/assets/561c4f34-2f48-4a25-9a07-345c43ac59d1)
 
 
