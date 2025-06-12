@@ -10,6 +10,8 @@
 				</SoundBank>
 				<SoundBank Name="Starting" ID="{B74F2C62-DE4A-45CF-BE32-3A0C4EF054E0}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Win" ID="{72413EA5-5FE5-4238-B9CF-E679AED4DA1F}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Over" ID="{5D83EF01-0B40-42B6-9F0A-707189EA3547}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_ButtonClick" ID="{0AE59854-505F-4590-B75B-16B7D79EE172}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_StartMusic" ID="{436DEA4D-4C0A-478E-901F-7D0F57A3E471}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

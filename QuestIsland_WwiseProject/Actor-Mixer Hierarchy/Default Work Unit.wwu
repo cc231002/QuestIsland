@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Start" ID="{79919EAD-92E0-41E4-85BD-83AC87A7FD45}" ShortID="482240749">
+				<Folder Name="Menus" ID="{79919EAD-92E0-41E4-85BD-83AC87A7FD45}" ShortID="482240749">
 					<ChildrenList>
 						<RandomSequenceContainer Name="StartMusic" ID="{57FAB1DC-3EB3-4DBF-B32C-3CC6C762FDE2}" ShortID="1067615597">
 							<ReferenceList>
@@ -99,6 +99,98 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="ES_Select, Soft Round Pluck, Short, Reverb - Epidemic Sound" ID="{4DBDB7AE-0A24-4721-A74F-8357E9B2A609}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Over" ID="{6C0E93EF-44B7-4C64-A8EA-063AE2AD222F}" ShortID="90978422">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{AE6BBD12-014B-4381-B814-24CF8BB7967C}" ShortID="398681789">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{6EA57CB6-39D9-4857-92DE-44637E29B444}">
+											<Language>SFX</Language>
+											<AudioFile>SDR2 OST_ -1-27- Re_ Welcome to Despair Academy.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="586386588"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{6EA57CB6-39D9-4857-92DE-44637E29B444}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Win" ID="{D5D6F264-DB70-4E04-8EE1-099B7472DAD1}" ShortID="296177939">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yoshi’s Woolly World - Big Boss Clear (Fanfare Only)" ID="{AA1AB5AF-2374-4D9C-BFDC-811BC6B621FD}" ShortID="542102879">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-230</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yoshi’s Woolly World - Big Boss Clear (Fanfare Only)" ID="{EBEC1F0B-B847-4659-81E6-E3E121FD1AAA}">
+											<Language>SFX</Language>
+											<AudioFile>Yoshi’s Woolly World - Big Boss Clear (Fanfare Only).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="617828886"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Yoshi’s Woolly World - Big Boss Clear (Fanfare Only)" ID="{EBEC1F0B-B847-4659-81E6-E3E121FD1AAA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
