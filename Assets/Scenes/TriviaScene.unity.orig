@@ -1735,7 +1735,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261866171}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+--- !u!1 &1353059396
+=======
 --- !u!1 &1306114018
+>>>>>>> Trivia-Scene
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1743,17 +1747,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 1353059398}
+  - component: {fileID: 1353059397}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+=======
   - component: {fileID: 1306114019}
   - component: {fileID: 1306114022}
   - component: {fileID: 1306114021}
   - component: {fileID: 1306114020}
   m_Layer: 5
   m_Name: AnswerDButton
+>>>>>>> Trivia-Scene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+--- !u!114 &1353059397
+=======
 --- !u!224 &1306114019
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1775,11 +1789,35 @@ RectTransform:
   m_SizeDelta: {x: 460, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1306114020
+>>>>>>> Trivia-Scene
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1353059396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1b22dc74a0b67419c064b5db9d2b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: da9856e9b4b88e041a7f46c332618bf2, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1353059398
+Transform:
+=======
   m_GameObject: {fileID: 1306114018}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1820,10 +1858,22 @@ MonoBehaviour:
       m_Calls: []
 --- !u!114 &1306114021
 MonoBehaviour:
+>>>>>>> Trivia-Scene
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1353059396}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
   m_GameObject: {fileID: 1306114018}
   m_Enabled: 0
   m_EditorHideFlags: 0
@@ -1856,63 +1906,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306114018}
   m_CullTransparentMesh: 1
---- !u!1 &1353059396
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1353059398}
-  - component: {fileID: 1353059397}
-  m_Layer: 0
-  m_Name: WwiseGlobal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1353059397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353059396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa1b22dc74a0b67419c064b5db9d2b46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: da9856e9b4b88e041a7f46c332618bf2, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
---- !u!4 &1353059398
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353059396}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Trivia-Scene
 --- !u!1 &1383412525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,8 +2555,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1848454029}
   - component: {fileID: 1848454028}
+<<<<<<< HEAD
+  - component: {fileID: 1848454030}
   - component: {fileID: 1848454032}
   - component: {fileID: 1848454031}
+=======
+  - component: {fileID: 1848454027}
+>>>>>>> Trivia-Scene
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2635,7 +2634,25 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -7.81, y: 0, z: 0}
+<<<<<<< HEAD
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1848454030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848454026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d896a8a6d8f02224d869d8ede78ba1f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 476262941}
+  offset: {x: 0, y: 2, z: -5}
+  rotationSpeed: 5
+  minPitch: -50
+  maxPitch: 10
 --- !u!114 &1848454031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2676,6 +2693,9 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+=======
+  m_LocalEulerAnglesHint: {x: -7.81, y: 0, z: 0}
+>>>>>>> Trivia-Scene
 --- !u!1 &1910697421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2723,5 +2743,8 @@ SceneRoots:
   - {fileID: 1256065585}
   - {fileID: 476262941}
   - {fileID: 1910697422}
-  - {fileID: 807637184}
+<<<<<<< HEAD
   - {fileID: 1353059398}
+=======
+  - {fileID: 807637184}
+>>>>>>> Trivia-Scene
