@@ -3,7 +3,1159 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Menus" ID="{79919EAD-92E0-41E4-85BD-83AC87A7FD45}" ShortID="482240749">
+				<ActorMixer Name="Ambient" ID="{00D3B11E-65F3-4600-94A5-5DAE10E2C0BA}" ShortID="301034434">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Birds" ID="{D61F2FD0-6336-49C4-97B4-536EF95B08AA}" ShortID="514973785">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming - Epidemic Sound" ID="{A58D67AC-C851-4DF3-9497-A02D1E770BC0}" ShortID="1000698661">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming - Epidemic Sound" ID="{EBF54F0C-94E3-4443-8439-0805B06FBB64}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="898154532"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming - Epidemic Sound" ID="{EBF54F0C-94E3-4443-8439-0805B06FBB64}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="WaterFall" ID="{B4F82E41-4799-4C8B-9DFD-50B2AEBBB0FC}" ShortID="1056076614">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Water" ID="{8D02600D-86A3-4877-8751-82EDAB32AA41}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_River, Small, Distant Waterfall 02 - Epidemic Sound" ID="{0E92223D-08D9-46CB-8F4A-71A3E96EF579}" ShortID="770920647">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Water" ID="{8D02600D-86A3-4877-8751-82EDAB32AA41}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_River, Small, Distant Waterfall 02 - Epidemic Sound" ID="{431C2D1A-FFA4-47A5-90F3-498BF887E276}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="41.8624197274667"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_River, Small, Distant Waterfall 02 - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="563643609"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_River, Small, Distant Waterfall 02 - Epidemic Sound" ID="{431C2D1A-FFA4-47A5-90F3-498BF887E276}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Waves" ID="{C775037E-D85C-4846-8EDC-4EB410E2940A}" ShortID="772780803">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Water" ID="{8D02600D-86A3-4877-8751-82EDAB32AA41}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Ocean, Beach Waves, Small, Lapping - Epidemic Sound" ID="{9A4774E6-D83E-4199-BA32-2A77F1D0E04F}" ShortID="749598598">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Water" ID="{8D02600D-86A3-4877-8751-82EDAB32AA41}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Ocean, Beach Waves, Small, Lapping - Epidemic Sound" ID="{3DCCF220-05F9-4B77-BDD1-B00E1E3C512F}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Ocean, Beach Waves, Small, Lapping - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="87877037"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Ocean, Beach Waves, Small, Lapping - Epidemic Sound" ID="{3DCCF220-05F9-4B77-BDD1-B00E1E3C512F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Wind" ID="{F99E9A51-ADA1-44D1-867A-E757370D294C}" ShortID="542301950">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Wind" ID="{063D52A6-99A4-452A-9ECA-01F7EC31E61B}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound" ID="{78550041-5C1E-4650-A3D5-8E1ED0947920}" ShortID="42540971">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Wind" ID="{063D52A6-99A4-452A-9ECA-01F7EC31E61B}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound" ID="{1629ECF5-96B7-4E9B-AFCA-FF2C7A051E01}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="3506575"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound" ID="{1629ECF5-96B7-4E9B-AFCA-FF2C7A051E01}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Action" ID="{A39140B9-5A67-4526-B2D3-57CECD829841}" ShortID="967535403">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Death" ID="{09F4FC82-AF84-40E3-9DE1-E5A28F51989A}" ShortID="150009784">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Heartup" ID="{1D6CBE8E-5CE1-4AC0-B356-8B9D8CF6AAC9}" ShortID="343930177">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound" ID="{46FB956D-E5F3-421D-81FF-E20A0758216D}" ShortID="908556497">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound" ID="{ABD7704E-38EF-47AD-985E-86594BAD6E1F}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.835049218071832"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="154233695"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound" ID="{ABD7704E-38EF-47AD-985E-86594BAD6E1F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="HeartLose" ID="{9E2F0156-5F5C-4A49-B081-61678D0BD408}" ShortID="191449407">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound" ID="{E920C8D5-D0DB-408F-B898-38ED3555016F}" ShortID="1053394631">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound" ID="{71ADB61E-828B-4F3F-ADB1-47B5BB066F5D}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="154386619"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound" ID="{71ADB61E-828B-4F3F-ADB1-47B5BB066F5D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Bee" ID="{884A4663-54DA-4A7B-926C-E7BAD9076E06}" ShortID="891324957">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Bee Recorded Individually 05 - Epidemic Sound" ID="{9238DDE6-5BC9-48B9-AAD0-B712DBF9C54D}" ShortID="414086809">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Bee" ID="{11599738-9353-4E26-9A8F-357E4B37D92D}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Bee Recorded Individually 05 - Epidemic Sound" ID="{3F64752D-C75D-40B8-BA49-D42E56EA9FF1}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="147.067609632843"/>
+												<Property Name="TrimEnd" Type="Real64" Value="168.560811411453"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Bee Recorded Individually 05 - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="534082943"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Bee Recorded Individually 05 - Epidemic Sound" ID="{3F64752D-C75D-40B8-BA49-D42E56EA9FF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<SwitchContainer Name="Walk" ID="{EE69E51A-FBE2-4EBF-8515-DEF1D27951F4}" ShortID="238858007">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>230</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Surface" ID="{EC0D48D9-8817-4FCD-BF2B-07ECFC6168AB}" WorkUnitID="{1A84420E-F931-4823-BFE8-FBD22DDD9408}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Grass" ID="{93E02B4D-8821-44BF-AE4E-D8776EA11A36}" ShortID="786871165">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ES_Walk, Grass, Mono - Epidemic Sound" ID="{DDA8D337-B382-4278-B2DE-CFF5998416DC}" ShortID="300727465">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>410</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ES_Walk, Grass, Mono - Epidemic Sound" ID="{0DAB27F4-405B-4532-9F04-4A3AA742F379}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.98155609809031"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ES_Walk, Grass, Mono - Epidemic Sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1014171501"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ES_Walk, Grass, Mono - Epidemic Sound" ID="{0DAB27F4-405B-4532-9F04-4A3AA742F379}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Stone" ID="{147EBAF3-098F-4898-A96A-049AEDD3782E}" ShortID="416269153">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ES_Boots, Concrete, Walk, Close - Epidemic Sound" ID="{086B82B3-E1F1-461A-AE00-6C21F4E6D2F3}" ShortID="166458850">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ES_Boots, Concrete, Walk, Close - Epidemic Sound" ID="{64797318-A2DD-4C95-A984-5C842D3FAAB6}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.83318985833062"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.17752869613082"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ES_Boots, Concrete, Walk, Close - Epidemic Sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="132871584"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ES_Boots, Concrete, Walk, Close - Epidemic Sound" ID="{64797318-A2DD-4C95-A984-5C842D3FAAB6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wood" ID="{14E7CD82-4D90-45BB-97CB-68D26143DA53}" ShortID="798823808">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ES_Wood, Creaky, Leather Sole, Medium - Epidemic Sound" ID="{D079B341-34D8-4F03-9DB8-76CD16F3F544}" ShortID="977350995">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ES_Wood, Creaky, Leather Sole, Medium - Epidemic Sound" ID="{0DE321A7-59ED-451E-A0DE-59C80B21272B}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.15638523652819"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ES_Wood, Creaky, Leather Sole, Medium - Epidemic Sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="837795675"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ES_Wood, Creaky, Leather Sole, Medium - Epidemic Sound" ID="{0DE321A7-59ED-451E-A0DE-59C80B21272B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Sand" ID="{4820EE84-C495-49AC-88E3-EC2F89764ECE}" ShortID="458350286">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ES_Slippers, Sand, Walk, Distant - Epidemic Sound" ID="{4FD26954-9060-41CC-AE52-F22B908A5AED}" ShortID="9465878">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ES_Slippers, Sand, Walk, Distant - Epidemic Sound" ID="{CBB61C9F-126F-4B0E-9673-8FD1EFA8FF33}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.420347199616609"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.78647636131004"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ES_Slippers, Sand, Walk, Distant - Epidemic Sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="16778294"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ES_Slippers, Sand, Walk, Distant - Epidemic Sound" ID="{CBB61C9F-126F-4B0E-9673-8FD1EFA8FF33}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Grass" ID="{93E02B4D-8821-44BF-AE4E-D8776EA11A36}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wood" ID="{14E7CD82-4D90-45BB-97CB-68D26143DA53}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sand" ID="{4820EE84-C495-49AC-88E3-EC2F89764ECE}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Stone" ID="{147EBAF3-098F-4898-A96A-049AEDD3782E}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{052B36B8-2E4C-4024-BDE0-422E02319DCA}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{93E02B4D-8821-44BF-AE4E-D8776EA11A36}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Sand" ID="{2F61A5C5-ECBF-4F16-80B5-9F5EEBE2C031}"/>
+										<ItemList>
+											<ItemRef Name="Sand" ID="{4820EE84-C495-49AC-88E3-EC2F89764ECE}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Stone" ID="{0CBB00D9-F5F6-4CF8-8240-3483F3EC95F6}"/>
+										<ItemList>
+											<ItemRef Name="Stone" ID="{147EBAF3-098F-4898-A96A-049AEDD3782E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{5808ABF4-ED69-473E-94A2-AE27998939E0}"/>
+										<ItemList>
+											<ItemRef Name="Wood" ID="{14E7CD82-4D90-45BB-97CB-68D26143DA53}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Music" ID="{D0E83DDF-1B3F-42A8-A1E6-F6730BA73107}" ShortID="359288386">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Main" ID="{9AFE9746-0704-45B5-BFBE-B28BA2AA108D}" ShortID="940841589">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_In the Summer - Lope" ID="{D0073727-22D5-4C31-81F5-C3F0AAC419A5}" ShortID="465810566">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-18</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_In the Summer - Lope" ID="{41F4BBF4-92ED-4C68-9236-AB5380F8E2AF}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="131.209876467858"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_In the Summer - Lope.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1015215739"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_In the Summer - Lope" ID="{41F4BBF4-92ED-4C68-9236-AB5380F8E2AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Halfway Heart (Instrumental Version) - Bluma Petersen" ID="{1E1B0A1C-D165-4B7E-83D4-3B6FA6B868C9}" ShortID="18794924">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Halfway Heart (Instrumental Version) - Bluma Petersen" ID="{FA8E8043-1992-432A-BEFD-272591077EB1}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="196.06975308642"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Halfway Heart (Instrumental Version) - Bluma Petersen.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="652546354"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Halfway Heart (Instrumental Version) - Bluma Petersen" ID="{FA8E8043-1992-432A-BEFD-272591077EB1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Summer Dazes - baegel" ID="{EA383A13-C6F1-4059-8465-098F8C2FFA29}" ShortID="276380349">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Summer Dazes - baegel" ID="{12000B7F-60B4-4CFD-A83C-0A6D25F3902C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="11.9639491803231"/>
+												<Property Name="TrimEnd" Type="Real64" Value="166.394450476554"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Summer Dazes - baegel.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="980038803"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Summer Dazes - baegel" ID="{12000B7F-60B4-4CFD-A83C-0A6D25F3902C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Trivia" ID="{73D941F4-846D-4935-B51B-005E5D2AB4C4}" ShortID="479948885">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Complete" ID="{81F64E5A-7CA7-4CE5-B5EC-A315A8A627A0}" ShortID="765003616">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound" ID="{4DD1839A-024B-4CFB-8FFB-E8A7A2EC9617}" ShortID="630065567">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>41</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-270</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound" ID="{981BA54C-2322-4915-A37B-0A145E232CDF}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="546345719"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound" ID="{981BA54C-2322-4915-A37B-0A145E232CDF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Wrong" ID="{8EB1F89C-04FB-4571-AD3D-28FF8C7DD510}" ShortID="175784095">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Game, Jingle, Chime, Negative 02 - Epidemic Sound" ID="{99D74C67-0CB6-425F-AABB-5C95F94C4B3B}" ShortID="424931688">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-130</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Game, Jingle, Chime, Negative 02 - Epidemic Sound" ID="{12E6C4EF-DCB6-414A-BF40-7340625E76DD}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.58327167624015"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Game, Jingle, Chime, Negative 02 - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="290746911"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Game, Jingle, Chime, Negative 02 - Epidemic Sound" ID="{12E6C4EF-DCB6-414A-BF40-7340625E76DD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Correct" ID="{4A1324AC-0AFE-40A4-8086-AEF3750435F1}" ShortID="1008681674">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound" ID="{903DC38A-17C9-48FD-95CE-22892FC2CA16}" ShortID="226461892">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound" ID="{A87A51F4-7F8B-4E9F-ACBE-406C34758365}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.05614864292852"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="918913375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound" ID="{A87A51F4-7F8B-4E9F-ACBE-406C34758365}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound_01" ID="{6C8CB5EE-1299-44BE-900D-B5B3B1AF6FE6}" ShortID="236515532">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound" ID="{EDFB0A68-5F06-4643-A6F9-DDA220CD7345}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.56450366973877"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.75267096710205"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="190345228"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound" ID="{EDFB0A68-5F06-4643-A6F9-DDA220CD7345}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound_02" ID="{1A9CB621-282B-47B9-A889-93BBE6D72F21}" ShortID="15353327">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound" ID="{8E4AF554-9C50-41F4-A496-2AAF98B28DF8}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.94418122326886"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.36998209861474"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="288210764"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound" ID="{8E4AF554-9C50-41F4-A496-2AAF98B28DF8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Timer" ID="{457FD186-AA25-4C47-8ED8-A3DE3C92F46F}" ShortID="626377059">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound" ID="{D31E0F22-9E78-4C84-876C-ED5AED42D39F}" ShortID="702766807">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound" ID="{6EF5C55E-0612-4C09-90D4-329C7B59ED24}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.418969431161032"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="880961620"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound" ID="{6EF5C55E-0612-4C09-90D4-329C7B59ED24}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{C4003412-7745-4CF8-B385-7766749AC8C2}" ShortID="655710345">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="TimeLeft" ID="{9FA3B2FA-E344-42F3-8580-FCE057BA195E}" WorkUnitID="{57F47553-1724-4A22-AEA2-2AA43215AED3}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{1FDE1341-936C-4897-8880-16158BD9CA9A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.09598</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30</XPos>
+																		<YPos>200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</BlendContainer>
+						<RandomSequenceContainer Name="Music" ID="{BBE669DD-1C02-46FC-9B69-BC65629AD521}" ShortID="716678017">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SDR2 OST_ -1-08- Ms_ Monomi's Practice Lesson" ID="{C235502C-A92F-48F3-A320-1792B6793D89}" ShortID="990059714">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-18</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SDR2 OST_ -1-08- Ms_ Monomi's Practice Lesson" ID="{654F26F0-5214-43C3-8F8C-FA31DC3058B8}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="196.332896339699"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SDR2 OST_ -1-08- Ms. Monomi's Practice Lesson.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="819777711"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SDR2 OST_ -1-08- Ms_ Monomi's Practice Lesson" ID="{654F26F0-5214-43C3-8F8C-FA31DC3058B8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gourmet Race-Super Smash Bros_ Ultimate(Kirby Super Star)" ID="{CE077FE6-EA91-4BAC-B11B-5E8232FCE09B}" ShortID="1064501756">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>28</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gourmet Race-Super Smash Bros_ Ultimate(Kirby Super Star)" ID="{2415AF41-DAF9-40D6-A54C-6961E6B46CA9}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.228425552914029"/>
+												<Property Name="TrimEnd" Type="Real64" Value="128.429917117873"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Gourmet Race-Super Smash Bros. Ultimate(Kirby Super Star).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="984098091"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Gourmet Race-Super Smash Bros_ Ultimate(Kirby Super Star)" ID="{2415AF41-DAF9-40D6-A54C-6961E6B46CA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Menu" ID="{3645D6DC-C0B2-4EBE-A563-F35A60E826F8}" ShortID="743330245">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="StartMusic" ID="{57FAB1DC-3EB3-4DBF-B32C-3CC6C762FDE2}" ShortID="1067615597">
 							<ReferenceList>
@@ -48,6 +1200,52 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="ES_Running a Little Late (Instrumental Version) - Katharine Appleton" ID="{E155B6F2-396E-4AA0-9EE9-B619CDC507D5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Over" ID="{6C0E93EF-44B7-4C64-A8EA-063AE2AD222F}" ShortID="90978422">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{AE6BBD12-014B-4381-B814-24CF8BB7967C}" ShortID="398681789">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{6EA57CB6-39D9-4857-92DE-44637E29B444}">
+											<Language>SFX</Language>
+											<AudioFile>SDR2 OST_ -1-27- Re_ Welcome to Despair Academy.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="586386588"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{6EA57CB6-39D9-4857-92DE-44637E29B444}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -103,52 +1301,6 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Over" ID="{6C0E93EF-44B7-4C64-A8EA-063AE2AD222F}" ShortID="90978422">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{AE6BBD12-014B-4381-B814-24CF8BB7967C}" ShortID="398681789">
-									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>20</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{6EA57CB6-39D9-4857-92DE-44637E29B444}">
-											<Language>SFX</Language>
-											<AudioFile>SDR2 OST_ -1-27- Re_ Welcome to Despair Academy.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="586386588"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SDR2 OST_ -1-27- Re_ Welcome to Despair Academy" ID="{6EA57CB6-39D9-4857-92DE-44637E29B444}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Win" ID="{D5D6F264-DB70-4E04-8EE1-099B7472DAD1}" ShortID="296177939">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -196,7 +1348,7 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
-				</Folder>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
