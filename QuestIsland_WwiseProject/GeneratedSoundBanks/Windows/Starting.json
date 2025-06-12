@@ -10,18 +10,34 @@
     "Type": "User",
     "GUID": "{B74F2C62-DE4A-45CF-BE32-3A0C4EF054E0}",
     "Language": "SFX",
-    "Hash": "{8CB6AF51-A46A-13CD-0CA9-AFB2A8C639F1}",
+    "Hash": "{B3B285EB-50BB-3E58-843D-798F04D88C7E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Starting",
     "ShortName": "Starting",
     "Path": "Starting.bnk",
     "Media": [
+     {
+      "Id": "586386588",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SDR2 OST_ -1-27- Re_ Welcome to Despair Academy.wav",
+      "CachePath": "76/{76F21955-3613-115B-2E65-A6C3C63250F7}.wem"
+     },
+     {
+      "Id": "617828886",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Yoshi’s Woolly World - Big Boss Clear (Fanfare Only).wav",
+      "CachePath": "2E/{2ED0E83D-5634-4650-66C8-9F21ABCA5CC5}.wem"
+     },
      {
       "Id": "909166354",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Select, Soft Round Pluck, Short, Reverb - Epidemic Sound.wav",
-      "CachePath": "51/{516D4762-8635-9753-4264-69DDC3D22F9A}.wem"
+      "CachePath": "7B/{7BF6E533-6A3E-7D8E-965A-0C7957D5E28A}.wem"
      },
      {
       "Id": "1073633020",
@@ -48,6 +64,20 @@
       ]
      },
      {
+      "Id": "2348692292",
+      "Name": "Play_Over",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Over",
+      "GUID": "{5D83EF01-0B40-42B6-9F0A-707189EA3547}",
+      "DurationType": "OneShot",
+      "DurationMin": "98.638374",
+      "DurationMax": "98.638374",
+      "MediaRefs": [
+       {
+        "Id": "586386588"
+       }
+      ]
+     },
+     {
       "Id": "1035306431",
       "Name": "Play_StartMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_StartMusic",
@@ -58,10 +88,24 @@
         "Id": "1073633020"
        }
       ]
+     },
+     {
+      "Id": "2955987680",
+      "Name": "Play_Win",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Win",
+      "GUID": "{72413EA5-5FE5-4238-B9CF-E679AED4DA1F}",
+      "DurationType": "OneShot",
+      "DurationMin": "9.10932",
+      "DurationMax": "9.10932",
+      "MediaRefs": [
+       {
+        "Id": "617828886"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{0971187B-E9ED-2776-04A4-CF0102091DAE}"
+  "FileHash": "{959147AC-629E-3519-E91F-637F4C69B7A1}"
  }
 }

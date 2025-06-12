@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Over" ID="{5D83EF01-0B40-42B6-9F0A-707189EA3547}">
+					<ChildrenList>
+						<Action Name="" ID="{5900BAF4-B739-4C0D-8BF7-42EB8142C516}" ShortID="575549230">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Over" ID="{6C0E93EF-44B7-4C64-A8EA-063AE2AD222F}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Win" ID="{72413EA5-5FE5-4238-B9CF-E679AED4DA1F}">
+					<ChildrenList>
+						<Action Name="" ID="{A3AA3260-5A33-4C9B-AA7E-B4D5761CF231}" ShortID="684403550">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Win" ID="{D5D6F264-DB70-4E04-8EE1-099B7472DAD1}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

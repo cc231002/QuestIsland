@@ -65,8 +65,8 @@ MonoBehaviour:
       guid: 280c6f5ae24de74aae9d7986e8affa9f
     ParentPath: SoundBanks\Default Work Unit
     guid: 280c6f5ae24de74aae9d7986e8affa9f
-    GuidInternal: 
-    m_lastTime: -8584519571648366901
+    GuidInternal:
+    m_lastTime: -8584519565513088760
     List:
     - name: MainSounds
       guid: a07104412d9b85438e72ccf7111eb7b2
@@ -107,8 +107,8 @@ MonoBehaviour:
       guid: 091c9c1deb694149a3d178e86bbb042b
     ParentPath: Events\Default Work Unit
     guid: 091c9c1deb694149a3d178e86bbb042b
-    GuidInternal: 
-    m_lastTime: -8584519571661613806
+    GuidInternal:
+    m_lastTime: -8584519565807263661
     List:
     - name: Play_ButtonClick
       guid: 5498e50a5f509045b75b16b7d79ee172
@@ -127,6 +127,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.6437257
       minDuration: 0.6437257
+    - name: Play_Over
+      guid: 01ef835d400bb6429f0a707189ea3547
+      id: 2348692292
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 091c9c1deb694149a3d178e86bbb042b
+      - ElementName: Play_Over
+        ObjectType: 3
+        guid: 01ef835d400bb6429f0a707189ea3547
+      Path: Events\Default Work Unit\Play_Over
+      maxAttenuation: 0
+      maxDuration: 98.638374
+      minDuration: 98.638374
     - name: Play_StartMusic
       guid: 4dea6d430a4c8e47901f7d0f57a3e471
       id: 1035306431
@@ -144,6 +161,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Win
+      guid: a53e4172e55f3842b9cfe679aed4da1f
+      id: 2955987680
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 091c9c1deb694149a3d178e86bbb042b
+      - ElementName: Play_Win
+        ObjectType: 3
+        guid: a53e4172e55f3842b9cfe679aed4da1f
+      Path: Events\Default Work Unit\Play_Win
+      maxAttenuation: 0
+      maxDuration: 9.10932
+      minDuration: 9.10932
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -201,7 +235,7 @@ MonoBehaviour:
     m_lastTime: -8584519571648330377
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000090000000a0000000b000000
+  ExpandedWaapiItemIds: 010000000500000006000000090000000a0000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

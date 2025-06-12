@@ -14,7 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BUTTONCLICK = 3548535810U;
+        static const AkUniqueID PLAY_OVER = 2348692292U;
         static const AkUniqueID PLAY_STARTMUSIC = 1035306431U;
+        static const AkUniqueID PLAY_WIN = 2955987680U;
     } // namespace EVENTS
 
     namespace BANKS
