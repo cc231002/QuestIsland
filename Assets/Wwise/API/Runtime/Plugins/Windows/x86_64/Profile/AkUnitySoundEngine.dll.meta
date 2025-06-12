@@ -20,14 +20,31 @@ PluginImporter:
         CPU: x86_64
         DefaultValueInitialized: true
         OS: Windows
+<<<<<<< HEAD
+=======
+    Linux64:
+      enabled: 0
+      settings:
+        CPU: None
+    OSXUniversal:
+      enabled: 0
+      settings:
+        CPU: None
+>>>>>>> SceneManager
     Win:
       enabled: 0
       settings:
         CPU: None
     Win64:
+<<<<<<< HEAD
       enabled: 1
       settings:
         CPU: x86_64
+=======
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+>>>>>>> SceneManager
     WindowsStoreApps:
       enabled: 0
       settings:

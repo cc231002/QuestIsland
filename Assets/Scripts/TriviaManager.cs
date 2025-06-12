@@ -1,7 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI; // Add this for Button
+using UnityEngine.SceneManagement;
 
 public class TriviaManager : MonoBehaviour
 {
@@ -101,33 +103,43 @@ public class TriviaManager : MonoBehaviour
         {
             questionTextUI.text = "You finished all questions!";
             foreach (var txt in answerTextUIs) txt.text = "";
+
+            // Optionally disable buttons
+            foreach (var btn in answerButtons)
+            {
+                btn.interactable = false;
+            }
+
+            // Start scene change delay
+            StartCoroutine(LoadSceneAfterDelay(3f)); // waits 3 seconds
             return;
         }
+
 
         Question q = selectedQuestions[currentQuestionIndex];
         questionTextUI.text = q.question;
 
         for (int i = 0; i < answerButtons.Length; i++)
-{
-    if (i < q.options.Count)
-    {
-        string optionKey = q.options[i].key;
+        {
+            if (i < q.options.Count)
+            {
+                string optionKey = q.options[i].key;
 
-        // Set the text of the button
-        TMP_Text buttonText = answerButtons[i].GetComponentInChildren<TMP_Text>();
-        buttonText.text = $"{optionKey}: {q.options[i].value}";
+                // Set the text of the button
+                TMP_Text buttonText = answerButtons[i].GetComponentInChildren<TMP_Text>();
+                buttonText.text = $"{optionKey}: {q.options[i].value}";
 
-        // Clear previous listeners to avoid stacking
-        answerButtons[i].onClick.RemoveAllListeners();
+                // Clear previous listeners to avoid stacking
+                answerButtons[i].onClick.RemoveAllListeners();
 
-        // Add a listener for this specific option
-        answerButtons[i].onClick.AddListener(() => CheckAnswer(optionKey));
-    }
-    else
-    {
-        answerButtons[i].gameObject.SetActive(false);
-    }
-}
+                // Add a listener for this specific option
+                answerButtons[i].onClick.AddListener(() => CheckAnswer(optionKey));
+            }
+            else
+            {
+                answerButtons[i].gameObject.SetActive(false);
+            }
+        }
 
     }
 
@@ -149,4 +161,13 @@ public class TriviaManager : MonoBehaviour
         currentQuestionIndex++;
         ShowQuestion();
     }
+    IEnumerator LoadSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("GameScene");
+    }
+
+
+    
+    
 }
