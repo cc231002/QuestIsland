@@ -671,40 +671,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="ES_In the Summer - Lope" ID="{D0073727-22D5-4C31-81F5-C3F0AAC419A5}" ShortID="465810566">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-18</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ES_In the Summer - Lope" ID="{41F4BBF4-92ED-4C68-9236-AB5380F8E2AF}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="131.209876467858"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ES_In the Summer - Lope.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1015215739"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ES_In the Summer - Lope" ID="{41F4BBF4-92ED-4C68-9236-AB5380F8E2AF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="ES_Halfway Heart (Instrumental Version) - Bluma Petersen" ID="{1E1B0A1C-D165-4B7E-83D4-3B6FA6B868C9}" ShortID="18794924">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -737,41 +703,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="ES_Halfway Heart (Instrumental Version) - Bluma Petersen" ID="{FA8E8043-1992-432A-BEFD-272591077EB1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ES_Summer Dazes - baegel" ID="{EA383A13-C6F1-4059-8465-098F8C2FFA29}" ShortID="276380349">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-22</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ES_Summer Dazes - baegel" ID="{12000B7F-60B4-4CFD-A83C-0A6D25F3902C}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="11.9639491803231"/>
-												<Property Name="TrimEnd" Type="Real64" Value="166.394450476554"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ES_Summer Dazes - baegel.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="980038803"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ES_Summer Dazes - baegel" ID="{12000B7F-60B4-4CFD-A83C-0A6D25F3902C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
