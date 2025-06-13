@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/StartingScene.unity
     guid: 7f6b12a9d88ad7842b1ea1c252032c96
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/IslandScene.unity
     guid: 0e38771b5082749498bef7b25d8aab6c
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene.unity
+    guid: 5ea9914f57487514f8754a68ecf2bcdf
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: 7f7dc1972dfc5074cba346ce2ebdf691
