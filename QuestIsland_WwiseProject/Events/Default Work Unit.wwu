@@ -47,6 +47,160 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Bee" ID="{E45C54EA-E9E9-4213-BA2C-0A3CE174C3D8}">
+					<ChildrenList>
+						<Action Name="" ID="{953F4BC0-88BE-4B76-B18F-3E7D4047DDB2}" ShortID="842619101">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bee" ID="{884A4663-54DA-4A7B-926C-E7BAD9076E06}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HeartLose" ID="{E7BF6A00-EEB3-465A-A0EB-E93D8F7FEEAC}">
+					<ChildrenList>
+						<Action Name="" ID="{278944D8-ADCF-4937-9C74-1BCE95F332CA}" ShortID="808656213">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HeartLose" ID="{9E2F0156-5F5C-4A49-B081-61678D0BD408}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Heartup" ID="{ABACC851-DA7F-478D-A34D-C181462C80A9}">
+					<ChildrenList>
+						<Action Name="" ID="{89250394-F2F7-41B9-A798-7D4C61B8B734}" ShortID="254078281">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heartup" ID="{1D6CBE8E-5CE1-4AC0-B356-8B9D8CF6AAC9}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Walk" ID="{F50EB312-2780-447C-A70D-683547E5C1EE}">
+					<ChildrenList>
+						<Action Name="" ID="{145E945F-7670-4EFC-9643-9F30EE163FC4}" ShortID="871737364">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Walk" ID="{EE69E51A-FBE2-4EBF-8515-DEF1D27951F4}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Birds" ID="{8DE561E1-FCDC-4268-9622-EBC114F0669E}">
+					<ChildrenList>
+						<Action Name="" ID="{30383D65-CEDB-4A5A-A34C-786A150AEA7F}" ShortID="456552237">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birds" ID="{D61F2FD0-6336-49C4-97B4-536EF95B08AA}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_WaterFall" ID="{435D3D91-4A8A-47BA-8B00-076FC25966C7}">
+					<ChildrenList>
+						<Action Name="" ID="{FD467B5D-7CFE-4439-B2FD-DB6B8BE50909}" ShortID="761420013">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WaterFall" ID="{B4F82E41-4799-4C8B-9DFD-50B2AEBBB0FC}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Waves" ID="{0E2F4936-22C7-48AF-B85D-56DD99E9C05B}">
+					<ChildrenList>
+						<Action Name="" ID="{0B642C4D-04CA-4D8B-AE5F-F557BA57BDA2}" ShortID="547760594">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Waves" ID="{C775037E-D85C-4846-8EDC-4EB410E2940A}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Wind" ID="{4355965E-3F98-43B5-9F71-577445E7172F}">
+					<ChildrenList>
+						<Action Name="" ID="{B90086C1-EA06-4AEB-A5D7-E2D8C7FE0973}" ShortID="462301688">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{F99E9A51-ADA1-44D1-867A-E757370D294C}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MainMusic" ID="{7AD11615-35D1-4414-95D9-541B5A9AD126}">
+					<ChildrenList>
+						<Action Name="" ID="{27393DF9-ADC4-4630-9B5D-6EAAD8B5EAE9}" ShortID="1050849687">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main" ID="{9AFE9746-0704-45B5-BFBE-B28BA2AA108D}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Complete" ID="{B4438A9C-9D8A-459A-B319-2ACB1E3AC9D9}">
+					<ChildrenList>
+						<Action Name="" ID="{2AEB897B-FD0A-4A69-9450-66ECFE304E0D}" ShortID="344921661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Complete" ID="{81F64E5A-7CA7-4CE5-B5EC-A315A8A627A0}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Correct" ID="{1BB8ECA0-BA50-4E24-B135-175FA622DB61}">
+					<ChildrenList>
+						<Action Name="" ID="{CEB6C7C7-BB5A-4E37-911A-0D65C5A32CA6}" ShortID="636209646">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Correct" ID="{4A1324AC-0AFE-40A4-8086-AEF3750435F1}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TriviaMusic" ID="{846112CA-F936-4BBF-8773-532DB98D0A14}">
+					<ChildrenList>
+						<Action Name="" ID="{8A48FA35-79A9-4172-BC9D-A45C348279BC}" ShortID="274588773">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{BBE669DD-1C02-46FC-9B69-BC65629AD521}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Wrong" ID="{71704824-1B78-46CE-9560-9B3FB2F1CBBE}">
+					<ChildrenList>
+						<Action Name="" ID="{5FEBA718-DA83-4B80-A49B-D5DCB7493FD4}" ShortID="387491715">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wrong" ID="{8EB1F89C-04FB-4571-AD3D-28FF8C7DD510}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Timer" ID="{C96740F3-AD81-46FB-ABE2-3D8AA9BA3320}">
+					<ChildrenList>
+						<Action Name="" ID="{3691337C-7B41-4656-BD3E-BF93561608D1}" ShortID="217155636">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Timer" ID="{457FD186-AA25-4C47-8ED8-A3DE3C92F46F}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
