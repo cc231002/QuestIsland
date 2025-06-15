@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}" PersistMode="Standalone">
 			<ChildrenList>
 				<Attenuation Name="Water" ID="{8D02600D-86A3-4877-8751-82EDAB32AA41}" ShortID="778940031">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="75"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -14,16 +17,21 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>0</YPos>
+											<YPos>-0.23041</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>53.4813</XPos>
-											<YPos>-5.34534</YPos>
+											<XPos>34.56825</XPos>
+											<YPos>-2.23185</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>56.2067</XPos>
+											<YPos>-19.12871</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>75</XPos>
 											<YPos>-30.69322</YPos>
 											<Flags>37</Flags>
 										</Point>

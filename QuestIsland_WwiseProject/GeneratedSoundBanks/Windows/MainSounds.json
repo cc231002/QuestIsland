@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{5490D8F9-A88F-C625-6FCC-900C97B39F16}",
+    "Hash": "{1FED7974-0526-6184-67B2-73500119C736}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -205,7 +205,7 @@
       "Name": "Play_WaterFall",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_WaterFall",
       "GUID": "{435D3D91-4A8A-47BA-8B00-076FC25966C7}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "75",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -218,7 +218,7 @@
       "Name": "Play_Waves",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Waves",
       "GUID": "{0E2F4936-22C7-48AF-B85D-56DD99E9C05B}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "75",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -278,6 +278,6 @@
     ]
    }
   ],
-  "FileHash": "{BC865BB0-20C4-EC98-709B-DF6C6E13487F}"
+  "FileHash": "{99B4E6A9-8A61-613F-80B8-8700F959DD4C}"
  }
 }

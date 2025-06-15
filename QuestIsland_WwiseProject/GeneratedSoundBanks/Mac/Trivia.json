@@ -165,8 +165,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Timer",
       "GUID": "{C96740F3-AD81-46FB-ABE2-3D8AA9BA3320}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.41896942",
+      "DurationMax": "0.41896942",
       "MediaRefs": [
        {
         "Id": "880961620"
@@ -213,6 +213,6 @@
     ]
    }
   ],
-  "FileHash": "{FC7B69D5-A42F-F394-5FF4-AA049B6E9C2A}"
+  "FileHash": "{94D9BFB9-BB48-2FB4-78AC-76D1BA4CDEF7}"
  }
 }
