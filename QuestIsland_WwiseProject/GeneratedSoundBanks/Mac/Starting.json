@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B74F2C62-DE4A-45CF-BE32-3A0C4EF054E0}",
     "Language": "SFX",
-    "Hash": "{B3B285EB-50BB-3E58-843D-798F04D88C7E}",
+    "Hash": "{62B11840-6207-50DA-788F-0B9CCD7D05EA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Starting",
     "ShortName": "Starting",
     "Path": "Starting.bnk",
@@ -106,6 +106,6 @@
     ]
    }
   ],
-  "FileHash": "{202563EA-7B57-6867-21E1-EC91E3232747}"
+  "FileHash": "{D5B0BB1B-870C-33A6-746D-0944A5FD9E50}"
  }
 }

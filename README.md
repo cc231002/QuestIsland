@@ -47,6 +47,25 @@ QuestIsland is structured into 4 key scenes, each with a distinct function. Game
 - Mouse: Camera rotation
 - Keypad (1–4): Answer selection during trivia questions
 
+### Game features
+
+1. 3D Modelling & Animation
+   - Main character (humanoid): idle, walk, cheer, point somewhere
+   - Enemy character: Bee patroling around
+   - Friendly NPC: Jeff, friendly guy guides you through the quests
+   - Scene props: trivia booths, treasure chest, island with foliage, sand paths and surrounded by a cozy beach
+
+2. Game Audio
+   - Background music: chill, island-style loop
+   - Sound FX: walking, answering questions, booth interactions, heart loss, correct/wrong answer, enemy ambient sound
+   - WWise Integration: All sounds spatialized + Audio feedback based on player actions
+   - Finale: Endgame jingle on winning
+
+3. Unity Features
+   - Scene Structure: Main Menu(start game/exit), Game Scene, Trivia Scene, End Scene (win/lose screen)
+   - State Manager: tracks health and current quest, Object persists between scenes
+   - Input Devices: Keyboard for movement, mouse for guiding the camera, keypad for selecting the answers
+   - Game Over Logic: lose all heart → restart full game (Keeps implementation simple and avoids data saving complexity)
 
 ## System Infrastructure
 

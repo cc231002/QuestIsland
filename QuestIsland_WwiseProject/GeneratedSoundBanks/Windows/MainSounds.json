@@ -10,12 +10,274 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{4572B45D-ECD5-B274-64D4-A4894EFD4FFA}",
+    "Hash": "{4EAAC369-4469-8690-4241-6189B6D6D1C5}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
-    "Path": "MainSounds.bnk"
+    "Path": "MainSounds.bnk",
+    "Media": [
+     {
+      "Id": "3506575",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound.wav",
+      "CachePath": "84/{8460B449-F90E-256F-B12D-155919F7CB20}.wem"
+     },
+     {
+      "Id": "16778294",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Slippers, Sand, Walk, Distant - Epidemic Sound.wav",
+      "CachePath": "C8/{C898C2F0-20A7-3FDE-485B-02AB3F8B402E}.wem"
+     },
+     {
+      "Id": "87877037",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Ocean, Beach Waves, Small, Lapping - Epidemic Sound.wav",
+      "CachePath": "9C/{9CC172E0-4F08-EC0F-6A61-FF9B8B90C55F}.wem"
+     },
+     {
+      "Id": "132871584",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Boots, Concrete, Walk, Close - Epidemic Sound.wav",
+      "CachePath": "2D/{2D1A5A88-DB1F-CC9E-B36E-7E24EE166FDF}.wem"
+     },
+     {
+      "Id": "534082943",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Bee Recorded Individually 05 - Epidemic Sound.wav",
+      "CachePath": "24/{24A1186D-CCF2-C9B0-9020-AF8952728A32}.wem"
+     },
+     {
+      "Id": "563643609",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_River, Small, Distant Waterfall 02 - Epidemic Sound.wav",
+      "CachePath": "20/{200A0C78-51E6-887D-CF1B-D090ABE8FBCF}.wem"
+     },
+     {
+      "Id": "652546354",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Halfway Heart (Instrumental Version) - Bluma Petersen.wav",
+      "CachePath": "05/{0577D6E8-A74A-54F1-A797-49873A9C5741}.wem"
+     },
+     {
+      "Id": "837795675",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Wood, Creaky, Leather Sole, Medium - Epidemic Sound.wav",
+      "CachePath": "1F/{1FE2CF1C-BB9B-9189-887B-75D073BC942E}.wem"
+     },
+     {
+      "Id": "898154532",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming - Epidemic Sound.wav",
+      "CachePath": "E7/{E710E5FB-05A6-0CEB-01C8-0559079AB6F9}.wem"
+     },
+     {
+      "Id": "1014171501",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Walk, Grass, Mono - Epidemic Sound.wav",
+      "CachePath": "74/{7426D482-D78E-806D-D1FA-67C2CEC52741}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3093209662",
+      "Name": "Play_Bee",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Bee",
+      "GUID": "{E45C54EA-E9E9-4213-BA2C-0A3CE174C3D8}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "534082943"
+       }
+      ]
+     },
+     {
+      "Id": "3025897706",
+      "Name": "Play_Birds",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Birds",
+      "GUID": "{8DE561E1-FCDC-4268-9622-EBC114F0669E}",
+      "DurationType": "OneShot",
+      "DurationMin": "202.816",
+      "DurationMax": "202.816",
+      "MediaRefs": [
+       {
+        "Id": "898154532"
+       }
+      ]
+     },
+     {
+      "Id": "1346240278",
+      "Name": "Play_MainMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MainMusic",
+      "GUID": "{7AD11615-35D1-4414-95D9-541B5A9AD126}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "652546354"
+       }
+      ]
+     },
+     {
+      "Id": "1589278981",
+      "Name": "Play_Walk",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Walk",
+      "GUID": "{F50EB312-2780-447C-A70D-683547E5C1EE}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0125234",
+      "DurationMax": "1.3691689",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "4248645337",
+         "GUID": "{052B36B8-2E4C-4024-BDE0-422E02319DCA}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "1014171501"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "803837735",
+         "GUID": "{2F61A5C5-ECBF-4F16-80B5-9F5EEBE2C031}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "16778294"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "1216965916",
+         "GUID": "{0CBB00D9-F5F6-4CF8-8240-3483F3EC95F6}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "132871584"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2058049674",
+         "GUID": "{5808ABF4-ED69-473E-94A2-AE27998939E0}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "837795675"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "467174588",
+      "Name": "Play_WaterFall",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_WaterFall",
+      "GUID": "{435D3D91-4A8A-47BA-8B00-076FC25966C7}",
+      "MaxAttenuation": "70",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "563643609"
+       }
+      ]
+     },
+     {
+      "Id": "374167564",
+      "Name": "Play_Waves",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Waves",
+      "GUID": "{0E2F4936-22C7-48AF-B85D-56DD99E9C05B}",
+      "MaxAttenuation": "70",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "87877037"
+       }
+      ]
+     },
+     {
+      "Id": "1020223172",
+      "Name": "Play_Wind",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Wind",
+      "GUID": "{4355965E-3F98-43B5-9F71-577445E7172F}",
+      "MaxAttenuation": "80",
+      "DurationType": "OneShot",
+      "DurationMin": "212.8765",
+      "DurationMax": "212.8765",
+      "MediaRefs": [
+       {
+        "Id": "3506575"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1834394558",
+      "Name": "Surface",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "GUID": "{EC0D48D9-8817-4FCD-BF2B-07ECFC6168AB}",
+      "Switches": [
+       {
+        "Id": "803837735",
+        "Name": "Sand",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Sand",
+        "GUID": "{2F61A5C5-ECBF-4F16-80B5-9F5EEBE2C031}"
+       },
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Stone",
+        "GUID": "{0CBB00D9-F5F6-4CF8-8240-3483F3EC95F6}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Wood",
+        "GUID": "{5808ABF4-ED69-473E-94A2-AE27998939E0}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass",
+        "GUID": "{052B36B8-2E4C-4024-BDE0-422E02319DCA}"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{1590519F-83CE-8E2C-9E8D-71A5DBFBAA17}"
+  "FileHash": "{C6235225-589A-08AF-5B09-3536FF042CA4}"
  }
 }
