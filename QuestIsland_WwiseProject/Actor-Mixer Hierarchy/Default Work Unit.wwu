@@ -14,6 +14,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Birds" ID="{D61F2FD0-6336-49C4-97B4-536EF95B08AA}" ShortID="514973785">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
@@ -118,7 +122,7 @@
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>8</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -190,6 +194,11 @@
 								<Sound Name="ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound" ID="{78550041-5C1E-4650-A3D5-8E1ED0947920}" ShortID="42540971">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -778,6 +787,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Wrong" ID="{8EB1F89C-04FB-4571-AD3D-28FF8C7DD510}" ShortID="175784095">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
@@ -829,6 +845,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Correct" ID="{4A1324AC-0AFE-40A4-8086-AEF3750435F1}" ShortID="1008681674">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
@@ -1000,6 +1023,13 @@
 							</ObjectLists>
 						</BlendContainer>
 						<RandomSequenceContainer Name="Music" ID="{BBE669DD-1C02-46FC-9B69-BC65629AD521}" ShortID="716678017">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
@@ -1014,7 +1044,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-18</Value>
+												<Value>-26</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1054,7 +1084,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-16</Value>
+												<Value>-19</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

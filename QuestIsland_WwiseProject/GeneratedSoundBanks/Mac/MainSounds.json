@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{1FED7974-0526-6184-67B2-73500119C736}",
+    "Hash": "{4EAAC369-4469-8690-4241-6189B6D6D1C5}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -205,7 +205,7 @@
       "Name": "Play_WaterFall",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_WaterFall",
       "GUID": "{435D3D91-4A8A-47BA-8B00-076FC25966C7}",
-      "MaxAttenuation": "75",
+      "MaxAttenuation": "70",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -218,7 +218,7 @@
       "Name": "Play_Waves",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Waves",
       "GUID": "{0E2F4936-22C7-48AF-B85D-56DD99E9C05B}",
-      "MaxAttenuation": "75",
+      "MaxAttenuation": "70",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -231,7 +231,7 @@
       "Name": "Play_Wind",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Wind",
       "GUID": "{4355965E-3F98-43B5-9F71-577445E7172F}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "80",
       "DurationType": "OneShot",
       "DurationMin": "212.8765",
       "DurationMax": "212.8765",
@@ -278,6 +278,6 @@
     ]
    }
   ],
-  "FileHash": "{9129D269-D906-13D9-7C60-55693C7A4F5A}"
+  "FileHash": "{9F29A23A-4F7A-E3C8-00DC-F517454875E4}"
  }
 }

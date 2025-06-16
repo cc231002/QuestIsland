@@ -144,23 +144,26 @@ public class TriviaManager : MonoBehaviour
     }
 
     void CheckAnswer(string selectedOption)
+{
+    if (currentQuestionIndex >= selectedQuestions.Count) return;
+
+    Question currentQuestion = selectedQuestions[currentQuestionIndex];
+
+    if (selectedOption == currentQuestion.answer)
     {
-        if (currentQuestionIndex >= selectedQuestions.Count) return;
-
-        Question currentQuestion = selectedQuestions[currentQuestionIndex];
-
-        if (selectedOption == currentQuestion.answer)
-        {
-            Debug.Log("Correct!");
-        }
-        else
-        {
-            Debug.Log("Wrong!");
-        }
-
-        currentQuestionIndex++;
-        ShowQuestion();
+        Debug.Log("Correct!");
+        AkUnitySoundEngine.PostEvent("Play_Correct", gameObject); // Play correct sound
     }
+    else
+    {
+        Debug.Log("Wrong!");
+        AkUnitySoundEngine.PostEvent("Play_Wrong", gameObject); // Play wrong sound
+    }
+
+    currentQuestionIndex++;
+    ShowQuestion();
+}
+
     IEnumerator LoadSceneAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
