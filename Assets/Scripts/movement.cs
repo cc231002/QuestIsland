@@ -4,34 +4,31 @@ public class CylinderMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody rb;
-
-    public Transform cameraTransform; // Reference to the camera
+    private Animator animator;
+    private Vector3 movementInput;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>(); // Make sure Animator is on child!
+    }
+
+    void Update()
+    {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+        movementInput = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+        float speed = movementInput.magnitude;
+        animator.SetFloat("Speed", speed);
+
+        Debug.Log("✅ Speed parameter sent to Animator: " + speed);
+        Debug.Log("🎮 Input H: " + moveHorizontal + ", V: " + moveVertical);
     }
 
     void FixedUpdate()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        // Calculate input direction relative to camera
-        Vector3 camForward = cameraTransform.forward;
-        Vector3 camRight = cameraTransform.right;
-
-        // Flatten the directions (ignore y to prevent flying/tilting)
-        camForward.y = 0f;
-        camRight.y = 0f;
-        camForward.Normalize();
-        camRight.Normalize();
-
-        // Calculate the final movement direction
-        Vector3 moveDirection = camForward * verticalInput + camRight * horizontalInput;
-
-        // Move the cylinder using Rigidbody
-        Vector3 newPosition = rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;
-        rb.MovePosition(newPosition);
+        rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+        Debug.Log("🚀 Rigidbody velocity approx: " + movementInput.magnitude * moveSpeed);
     }
 }
