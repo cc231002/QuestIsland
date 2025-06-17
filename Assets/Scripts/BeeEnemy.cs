@@ -40,7 +40,7 @@ public class BeeEnemy : MonoBehaviour
             return;
         }
 
-        Debug.Log("Spieler gefunden: " + player.name);
+        //Debug.Log("Spieler gefunden: " + player.name);
 
         animator = GetComponent<Animator>();
         targetPoint = pointB;
@@ -61,7 +61,7 @@ public class BeeEnemy : MonoBehaviour
                 break;
 
             case BeeState.Attacking:
-                // Optional: kannst hier Effekte einbauen
+                // Optional: Effekte einbauen
                 break;
 
             case BeeState.ReturningToPatrol:
@@ -105,7 +105,7 @@ public class BeeEnemy : MonoBehaviour
 {
     chaseTimer += Time.deltaTime;
 
-    // Mittelpunkte der Collider holen
+    // Mittelpunkte der Collider
     Vector3 playerCenter = player.GetComponent<Collider>() != null ? player.GetComponent<Collider>().bounds.center : player.position;
     Collider beeCollider = GetComponent<Collider>();
     Vector3 beeCenter = beeCollider != null ? beeCollider.bounds.center : transform.position;
@@ -143,8 +143,8 @@ public class BeeEnemy : MonoBehaviour
         Debug.Log("Attack() aufgerufen");
 
         animator.SetTrigger("AttackTrigger");
-        Debug.Log("Spieler verliert ein Leben!"); // später ersetzt dein Kollege das mit echter Logik
-        Invoke("FinishAttack", 1.5f); // z.B. 1 Sekunde dauert der Angriff // Annahme: Attack dauert 1 Sekunde
+        Debug.Log("Spieler verliert ein Leben!"); // echte logik ersetzen 
+        Invoke("FinishAttack", 1.5f); //  Annahme: Attack dauert 1 Sekunde
     }
 
     void FinishAttack()
@@ -183,36 +183,36 @@ public class BeeEnemy : MonoBehaviour
         // handled in other functions now
     }
 
-    void OnDrawGizmos()
-    {
-        if (pointA != null && pointB != null)
-        {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawSphere(pointA.position, 0.2f);
-            Gizmos.DrawSphere(pointB.position, 0.2f);
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawLine(pointA.position, pointB.position);
-        }
+    // void OnDrawGizmos()
+    // {
+    //     if (pointA != null && pointB != null)
+    //     {
+    //         Gizmos.color = Color.yellow;
+    //         Gizmos.DrawSphere(pointA.position, 0.2f);
+    //         Gizmos.DrawSphere(pointB.position, 0.2f);
+    //         Gizmos.color = Color.cyan;
+    //         Gizmos.DrawLine(pointA.position, pointB.position);
+    //     }
 
-        if (player != null)
-        {
-            // Standard Detection-Sphere
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, detectionRange);
+    //     if (player != null)
+    //     {
+    //         // Standard Detection-Sphere
+    //         Gizmos.color = Color.red;
+    //         Gizmos.DrawWireSphere(transform.position, detectionRange);
 
-            // Spieler-Collider-Mittelpunkt anzeigen
-            Collider playerCollider = player.GetComponent<Collider>();
-            if (playerCollider != null)
-            {
-                Vector3 center = playerCollider.bounds.center;
+    //         // Spieler-Collider-Mittelpunkt anzeigen
+    //         Collider playerCollider = player.GetComponent<Collider>();
+    //         if (playerCollider != null)
+    //         {
+    //             Vector3 center = playerCollider.bounds.center;
 
-                Gizmos.color = Color.green;
-                Gizmos.DrawWireSphere(center, 0.2f); // zeigt Mittelpunkt
-                Gizmos.color = new Color(1, 0.5f, 0f, 0.3f);
-                Gizmos.DrawLine(transform.position, center);
-            }
-        }
-    }
+    //             Gizmos.color = Color.green;
+    //             Gizmos.DrawWireSphere(center, 0.2f); // zeigt Mittelpunkt
+    //             Gizmos.color = new Color(1, 0.5f, 0f, 0.3f);
+    //             Gizmos.DrawLine(transform.position, center);
+    //         }
+    //     }
+    // }
 
 
 }
