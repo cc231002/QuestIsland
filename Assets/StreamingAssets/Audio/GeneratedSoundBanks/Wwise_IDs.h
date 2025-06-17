@@ -31,6 +31,7 @@ namespace AK
         static const AkUniqueID PLAY_WIN = 2955987680U;
         static const AkUniqueID PLAY_WIND = 1020223172U;
         static const AkUniqueID PLAY_WRONG = 92581801U;
+        static const AkUniqueID STOP_WALK = 3140964691U;
     } // namespace EVENTS
 
     namespace SWITCHES

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 280c6f5ae24de74aae9d7986e8affa9f
     GuidInternal: 
-    m_lastTime: -8584516143005287239
+    m_lastTime: -8584514590884988291
     List:
     - name: MainSounds
       guid: a07104412d9b85438e72ccf7111eb7b2
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 091c9c1deb694149a3d178e86bbb042b
     GuidInternal: 
-    m_lastTime: -8584516143053354345
+    m_lastTime: -8584514590885008290
     List:
     - name: Play_Bee
       guid: ea545ce4e9e91342ba2c0a3ce174c3d8
@@ -343,8 +343,8 @@ MonoBehaviour:
         guid: 12b30ef580277c44a70d683547e5c1ee
       Path: Events\Default Work Unit\Play_Walk
       maxAttenuation: 0
-      maxDuration: 1.3691689
-      minDuration: 1.0125234
+      maxDuration: 0
+      minDuration: 0
     - name: Play_WaterFall
       guid: 913d5d438a4aba478b00076fc25966c7
       id: 467174588
@@ -430,6 +430,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.7067386
       minDuration: 1.7067386
+    - name: Stop_Walk
+      guid: ff1f6b7e5a9f594087c47c5685d9f079
+      id: 3140964691
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 091c9c1deb694149a3d178e86bbb042b
+      - ElementName: Stop_Walk
+        ObjectType: 3
+        guid: ff1f6b7e5a9f594087c47c5685d9f079
+      Path: Events\Default Work Unit\Stop_Walk
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -583,7 +600,7 @@ MonoBehaviour:
     m_lastTime: -8584516143005265311
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c00000018000000190000001b0000001c000000200000002100000022000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c00000018000000190000001b0000001c00000020000000210000002200000023000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0

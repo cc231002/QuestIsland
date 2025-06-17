@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{4EAAC369-4469-8690-4241-6189B6D6D1C5}",
+    "Hash": "{BF1286F9-76E0-63E8-B1BA-4ACB45694FA1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Slippers, Sand, Walk, Distant - Epidemic Sound.wav",
-      "CachePath": "C8/{C898C2F0-20A7-3FDE-485B-02AB3F8B402E}.wem"
+      "CachePath": "DC/{DCA68F8B-7F20-BC9E-3816-A7164C6DDBA0}.wem"
      },
      {
       "Id": "87877037",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Boots, Concrete, Walk, Close - Epidemic Sound.wav",
-      "CachePath": "2D/{2D1A5A88-DB1F-CC9E-B36E-7E24EE166FDF}.wem"
+      "CachePath": "19/{1909438A-9F77-FCEF-D98F-CE06B3F0AE58}.wem"
      },
      {
       "Id": "534082943",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Wood, Creaky, Leather Sole, Medium - Epidemic Sound.wav",
-      "CachePath": "1F/{1FE2CF1C-BB9B-9189-887B-75D073BC942E}.wem"
+      "CachePath": "4F/{4FC1DDAE-D830-0E73-6E82-16C1C3018916}.wem"
      },
      {
       "Id": "898154532",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Walk, Grass, Mono - Epidemic Sound.wav",
-      "CachePath": "74/{7426D482-D78E-806D-D1FA-67C2CEC52741}.wem"
+      "CachePath": "DD/{DD330787-EFCB-D008-BC93-1AC5DE1BCCE0}.wem"
      }
     ],
     "Events": [
@@ -141,9 +141,7 @@
       "Name": "Play_Walk",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Walk",
       "GUID": "{F50EB312-2780-447C-A70D-683547E5C1EE}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.0125234",
-      "DurationMax": "1.3691689",
+      "DurationType": "Infinite",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -240,6 +238,16 @@
         "Id": "3506575"
        }
       ]
+     },
+     {
+      "Id": "3140964691",
+      "Name": "Stop_Walk",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_Walk",
+      "GUID": "{7E6B1FFF-9F5A-4059-87C4-7C5685D9F079}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ],
     "SwitchGroups": [
@@ -278,6 +286,6 @@
     ]
    }
   ],
-  "FileHash": "{9F29A23A-4F7A-E3C8-00DC-F517454875E4}"
+  "FileHash": "{3B014B6E-584C-058A-377C-345EB335425F}"
  }
 }
