@@ -1,0 +1,218 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2563809248",
+    "Type": "User",
+    "GUID": "{0A9012B5-8A20-4651-B360-353E5D05D498}",
+    "Language": "SFX",
+    "Hash": "{DB4E8F7D-4694-2467-0608-4445830AF390}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Trivia",
+    "ShortName": "Trivia",
+    "Path": "Trivia.bnk",
+    "Media": [
+     {
+      "Id": "154233695",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound.wav",
+      "CachePath": "77/{77B36D24-2CB2-FDA6-12CC-82A0E9B3949C}.wem"
+     },
+     {
+      "Id": "154386619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound.wav",
+      "CachePath": "90/{908BF718-48DE-A8F5-A480-9DBE7CC5301A}.wem"
+     },
+     {
+      "Id": "190345228",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav",
+      "CachePath": "E7/{E79D9E98-26B0-3176-EAB7-E57E73560811}.wem"
+     },
+     {
+      "Id": "288210764",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav",
+      "CachePath": "21/{21730734-DF3C-62F3-8C18-D6E588B5795A}.wem"
+     },
+     {
+      "Id": "290746911",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Game, Jingle, Chime, Negative 02 - Epidemic Sound.wav",
+      "CachePath": "A2/{A2644C86-A7CC-6419-3F3C-EC9AC6395072}.wem"
+     },
+     {
+      "Id": "546345719",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound.wav",
+      "CachePath": "17/{1706B648-D323-C784-6A87-59FFC7D7A0D7}.wem"
+     },
+     {
+      "Id": "819777711",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SDR2 OST_ -1-08- Ms. Monomi's Practice Lesson.wav",
+      "CachePath": "14/{1443AE7D-31B3-007D-8DA9-B3355A21201E}.wem"
+     },
+     {
+      "Id": "880961620",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound.wav",
+      "CachePath": "B8/{B8510C4E-F7A3-B34A-A800-2ED8C188A1CF}.wem"
+     },
+     {
+      "Id": "918913375",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav",
+      "CachePath": "A6/{A66565C8-C319-5610-2075-F06AE0CAD883}.wem"
+     },
+     {
+      "Id": "984098091",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Gourmet Race-Super Smash Bros. Ultimate(Kirby Super Star).wav",
+      "CachePath": "91/{91A29242-44CB-023E-EEFB-F5FFB3D1A809}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2401712799",
+      "Name": "Play_Complete",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Complete",
+      "GUID": "{B4438A9C-9D8A-459A-B319-2ACB1E3AC9D9}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.2428699",
+      "DurationMax": "3.2428699",
+      "MediaRefs": [
+       {
+        "Id": "546345719"
+       }
+      ]
+     },
+     {
+      "Id": "3335480108",
+      "Name": "Play_Correct",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Correct",
+      "GUID": "{1BB8ECA0-BA50-4E24-B135-175FA622DB61}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0561486",
+      "DurationMax": "1.4258009",
+      "MediaRefs": [
+       {
+        "Id": "190345228"
+       },
+       {
+        "Id": "288210764"
+       },
+       {
+        "Id": "918913375"
+       }
+      ]
+     },
+     {
+      "Id": "3271090145",
+      "Name": "Play_HeartLose",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_HeartLose",
+      "GUID": "{E7BF6A00-EEB3-465A-A0EB-E93D8F7FEEAC}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3203139",
+      "DurationMax": "1.3203139",
+      "MediaRefs": [
+       {
+        "Id": "154386619"
+       }
+      ]
+     },
+     {
+      "Id": "3022337573",
+      "Name": "Play_Heartup",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Heartup",
+      "GUID": "{ABACC851-DA7F-478D-A34D-C181462C80A9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8847039",
+      "DurationMax": "0.8847039",
+      "MediaRefs": [
+       {
+        "Id": "154233695"
+       }
+      ]
+     },
+     {
+      "Id": "4169444829",
+      "Name": "Play_Timer",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Timer",
+      "GUID": "{C96740F3-AD81-46FB-ABE2-3D8AA9BA3320}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.41896942",
+      "DurationMax": "0.41896942",
+      "MediaRefs": [
+       {
+        "Id": "880961620"
+       }
+      ]
+     },
+     {
+      "Id": "1573978988",
+      "Name": "Play_TriviaMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_TriviaMusic",
+      "GUID": "{846112CA-F936-4BBF-8773-532DB98D0A14}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "819777711"
+       },
+       {
+        "Id": "984098091"
+       }
+      ]
+     },
+     {
+      "Id": "92581801",
+      "Name": "Play_Wrong",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Wrong",
+      "GUID": "{71704824-1B78-46CE-9560-9B3FB2F1CBBE}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7067386",
+      "DurationMax": "1.7067386",
+      "MediaRefs": [
+       {
+        "Id": "290746911"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2486342905",
+      "Name": "TimeLeft",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\TimeLeft",
+      "GUID": "{9FA3B2FA-E344-42F3-8580-FCE057BA195E}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{059C3C38-B188-9FD1-D14A-735ADE0D2E02}"
+ }
+}
