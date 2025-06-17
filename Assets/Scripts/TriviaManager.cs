@@ -149,15 +149,17 @@ public class TriviaManager : MonoBehaviour
 
     Question currentQuestion = selectedQuestions[currentQuestionIndex];
 
-    if (selectedOption == currentQuestion.answer)
-    {
-        Debug.Log("Correct!");
-        AkUnitySoundEngine.PostEvent("Play_Correct", gameObject); // Play correct sound
-    }
-    else
-    {
-        Debug.Log("Wrong!");
-        AkUnitySoundEngine.PostEvent("Play_Wrong", gameObject); // Play wrong sound
+        if (selectedOption == currentQuestion.answer)
+        {
+            Debug.Log("Correct!");
+            AkUnitySoundEngine.PostEvent("Play_Correct", gameObject); // Play correct sound
+        }
+        else
+        {
+            Debug.Log("Wrong!");
+            AkUnitySoundEngine.PostEvent("Play_Wrong", gameObject); // Play wrong sound
+            HeartManager.Instance.LoseHeart();
+
     }
 
     currentQuestionIndex++;
