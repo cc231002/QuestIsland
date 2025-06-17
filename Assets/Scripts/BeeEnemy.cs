@@ -143,6 +143,7 @@ public class BeeEnemy : MonoBehaviour
 
         animator.SetTrigger("AttackTrigger");
         Debug.Log("Player loses a life!"); // replace with actual damage logic
+        HeartManager.Instance.LoseHeart();
         Invoke("FinishAttack", 1.5f); // attack duration
     }
 

@@ -29,6 +29,8 @@ public class FloatingHeart : MonoBehaviour
             // Alternatively, destroy it if no longer needed:
             // Destroy(gameObject);
             //Besi put here health logic increase here
+            //Thank you <33
+            HeartManager.Instance.GainHeart();
         }
     }
 }

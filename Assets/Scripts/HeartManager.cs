@@ -48,5 +48,12 @@ public class HeartManager : MonoBehaviour
         Debug.Log("Game Over!");
         SceneManager.LoadScene("GameOver");
     }
+    
+    public void GainHeart()
+{
+    CurrentHearts = Mathf.Min(CurrentHearts + 1, maxHearts); 
+    Debug.Log("Gained a heart!");
+}
+
    
 }
