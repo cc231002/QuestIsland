@@ -22,6 +22,7 @@ public class BeeEnemy : MonoBehaviour
     private Transform targetPoint;
     private BeeState currentState = BeeState.Patrolling;
     private float chaseTimer = 0f;
+    private CylinderMovement playerMovement;
 
     enum BeeState
     {
@@ -35,16 +36,17 @@ public class BeeEnemy : MonoBehaviour
     {
         if (pointA == null || pointB == null || player == null)
         {
-            Debug.LogError("Setze pointA, pointB und den Player im Inspector.");
+            Debug.LogError("Please assign pointA, pointB, and the player in the Inspector.");
             enabled = false;
             return;
         }
 
-        //Debug.Log("Spieler gefunden: " + player.name);
-
         animator = GetComponent<Animator>();
         targetPoint = pointB;
         basePosition = transform.position;
+
+        playerMovement = player.GetComponent<CylinderMovement>();
+
     }
 
     void Update()
@@ -61,7 +63,7 @@ public class BeeEnemy : MonoBehaviour
                 break;
 
             case BeeState.Attacking:
-                // Optional: Effekte einbauen
+                // Optional: Add visual or sound effects here
                 break;
 
             case BeeState.ReturningToPatrol:
@@ -69,7 +71,7 @@ public class BeeEnemy : MonoBehaviour
                 break;
         }
 
-        ApplyFloating();
+        ApplyFloating(); // Floating logic is handled within movement functions
     }
 
     void Patrol()
@@ -90,11 +92,9 @@ public class BeeEnemy : MonoBehaviour
     void DetectPlayer()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-        //Debug.Log("Entfernung zum Spieler: " + distanceToPlayer);
 
         if (distanceToPlayer <= detectionRange)
         {
-            //Debug.Log("Spieler erkannt! Wechsel zu Chase-Mode.");
             returnPosition = basePosition;
             currentState = BeeState.ChasingPlayer;
             chaseTimer = 0f;
@@ -102,53 +102,57 @@ public class BeeEnemy : MonoBehaviour
     }
 
     void ChasePlayer()
-{
-    chaseTimer += Time.deltaTime;
-
-    // Mittelpunkte der Collider
-    Vector3 playerCenter = player.GetComponent<Collider>() != null ? player.GetComponent<Collider>().bounds.center : player.position;
-    Collider beeCollider = GetComponent<Collider>();
-    Vector3 beeCenter = beeCollider != null ? beeCollider.bounds.center : transform.position;
-
-    float distanceToPlayer = Vector3.Distance(beeCenter, playerCenter);
-    Debug.Log("Chasing Player - Abstand: " + distanceToPlayer + ", Zeit: " + chaseTimer);
-
-    // Nur bewegen, wenn weiter als z.B. 0.7 entfernt
-    if (distanceToPlayer > 0.7f)
     {
-        Vector3 targetPos = new Vector3(playerCenter.x, basePosition.y, playerCenter.z);
-        basePosition = Vector3.MoveTowards(basePosition, targetPos, speed * 1.5f * Time.deltaTime);
-        transform.position = new Vector3(basePosition.x, basePosition.y + Mathf.Sin(Time.time * floatFrequency) * floatAmplitude, basePosition.z);
-        RotateTowards(targetPos);
+        chaseTimer += Time.deltaTime;
+
+        Vector3 playerCenter = player.GetComponent<Collider>() != null ? player.GetComponent<Collider>().bounds.center : player.position;
+        Collider beeCollider = GetComponent<Collider>();
+        Vector3 beeCenter = beeCollider != null ? beeCollider.bounds.center : transform.position;
+
+        float distanceToPlayer = Vector3.Distance(beeCenter, playerCenter);
+        Debug.Log("Chasing player - Distance: " + distanceToPlayer + ", Time: " + chaseTimer);
+
+        if (distanceToPlayer > 0.7f)
+        {
+            Vector3 targetPos = new Vector3(playerCenter.x, basePosition.y, playerCenter.z);
+            basePosition = Vector3.MoveTowards(basePosition, targetPos, speed * 1.5f * Time.deltaTime);
+            transform.position = new Vector3(basePosition.x, basePosition.y + Mathf.Sin(Time.time * floatFrequency) * floatAmplitude, basePosition.z);
+            RotateTowards(targetPos);
+        }
+
+        if (distanceToPlayer <= 0.983f)
+        {
+            Debug.Log("Starting attack!");
+            Attack();
+        }
+        else if (chaseTimer >= chaseDuration)
+        {
+            currentState = BeeState.ReturningToPatrol;
+        }
     }
-
-    // Angriff auslösen
-    if (distanceToPlayer <= 0.983f)
-    {
-        Debug.Log("Angriff starten!");
-        Attack();
-    }
-    else if (chaseTimer >= chaseDuration)
-    {
-        currentState = BeeState.ReturningToPatrol;
-    }
-}
-
-
-
 
     void Attack()
     {
+        if (playerMovement != null)
+        {
+            playerMovement.canMove = false; // Disable player movement
+        }
+
         currentState = BeeState.Attacking;
-        Debug.Log("Attack() aufgerufen");
+        Debug.Log("Attack() called");
 
         animator.SetTrigger("AttackTrigger");
-        Debug.Log("Spieler verliert ein Leben!"); // echte logik ersetzen 
-        Invoke("FinishAttack", 1.5f); //  Annahme: Attack dauert 1 Sekunde
+        Debug.Log("Player loses a life!"); // replace with actual damage logic
+        Invoke("FinishAttack", 1.5f); // attack duration
     }
 
     void FinishAttack()
     {
+        if (playerMovement != null)
+        {
+            playerMovement.canMove = true; // Re-enable movement
+        }
+
         currentState = BeeState.ReturningToPatrol;
     }
 
@@ -180,8 +184,12 @@ public class BeeEnemy : MonoBehaviour
 
     void ApplyFloating()
     {
-        // handled in other functions now
+        // Floating is applied within movement logic
     }
+
+    // Optional: Gizmos for debugging
+    // void OnDrawGizmos() { ... }
+
 
     // void OnDrawGizmos()
     // {
@@ -196,23 +204,18 @@ public class BeeEnemy : MonoBehaviour
 
     //     if (player != null)
     //     {
-    //         // Standard Detection-Sphere
     //         Gizmos.color = Color.red;
     //         Gizmos.DrawWireSphere(transform.position, detectionRange);
 
-    //         // Spieler-Collider-Mittelpunkt anzeigen
     //         Collider playerCollider = player.GetComponent<Collider>();
     //         if (playerCollider != null)
     //         {
     //             Vector3 center = playerCollider.bounds.center;
-
     //             Gizmos.color = Color.green;
-    //             Gizmos.DrawWireSphere(center, 0.2f); // zeigt Mittelpunkt
+    //             Gizmos.DrawWireSphere(center, 0.2f); // show center point
     //             Gizmos.color = new Color(1, 0.5f, 0f, 0.3f);
     //             Gizmos.DrawLine(transform.position, center);
     //         }
     //     }
     // }
-
-
 }
