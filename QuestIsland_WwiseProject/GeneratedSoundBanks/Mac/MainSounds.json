@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{BF1286F9-76E0-63E8-B1BA-4ACB45694FA1}",
+    "Hash": "{C04F686C-1870-ABF9-316D-DED970EA7809}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Walk, Grass, Mono - Epidemic Sound.wav",
-      "CachePath": "DD/{DD330787-EFCB-D008-BC93-1AC5DE1BCCE0}.wem"
+      "CachePath": "05/{057B6F36-8180-E796-5212-E33CBCD3942A}.wem"
      }
     ],
     "Events": [
@@ -229,7 +229,7 @@
       "Name": "Play_Wind",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Wind",
       "GUID": "{4355965E-3F98-43B5-9F71-577445E7172F}",
-      "MaxAttenuation": "80",
+      "MaxAttenuation": "70",
       "DurationType": "OneShot",
       "DurationMin": "212.8765",
       "DurationMax": "212.8765",
@@ -286,6 +286,6 @@
     ]
    }
   ],
-  "FileHash": "{3B014B6E-584C-058A-377C-345EB335425F}"
+  "FileHash": "{58210F96-6E58-A6AF-E8CF-D39168D38424}"
  }
 }

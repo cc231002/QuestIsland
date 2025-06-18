@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 280c6f5ae24de74aae9d7986e8affa9f
     GuidInternal: 
-    m_lastTime: -8584514590884988291
+    m_lastTime: -8584514489884191864
     List:
     - name: MainSounds
       guid: a07104412d9b85438e72ccf7111eb7b2
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 091c9c1deb694149a3d178e86bbb042b
     GuidInternal: 
-    m_lastTime: -8584514590885008290
+    m_lastTime: -8584514489896690557
     List:
     - name: Play_Bee
       guid: ea545ce4e9e91342ba2c0a3ce174c3d8
@@ -410,7 +410,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5e965543983fb5439f71577445e7172f
       Path: Events\Default Work Unit\Play_Wind
-      maxAttenuation: 80
+      maxAttenuation: 70
       maxDuration: 212.8765
       minDuration: 212.8765
     - name: Play_Wrong
