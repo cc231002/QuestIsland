@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{C04F686C-1870-ABF9-316D-DED970EA7809}",
+    "Hash": "{D20D2E3F-0408-6ECA-5D50-EFEA10EBE826}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound.wav",
-      "CachePath": "84/{8460B449-F90E-256F-B12D-155919F7CB20}.wem"
+      "CachePath": "C1/{C177A2ED-C2D4-2456-BC0D-80DE326A6B9C}.wem"
      },
      {
       "Id": "16778294",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Slippers, Sand, Walk, Distant - Epidemic Sound.wav",
-      "CachePath": "DC/{DCA68F8B-7F20-BC9E-3816-A7164C6DDBA0}.wem"
+      "CachePath": "93/{9334E22A-7AEC-7D26-DFFA-55564D053056}.wem"
      },
      {
       "Id": "87877037",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Ocean, Beach Waves, Small, Lapping - Epidemic Sound.wav",
-      "CachePath": "9C/{9CC172E0-4F08-EC0F-6A61-FF9B8B90C55F}.wem"
+      "CachePath": "DD/{DD6266A9-5846-5620-56BC-4394B8E52F81}.wem"
      },
      {
       "Id": "132871584",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Boots, Concrete, Walk, Close - Epidemic Sound.wav",
-      "CachePath": "19/{1909438A-9F77-FCEF-D98F-CE06B3F0AE58}.wem"
+      "CachePath": "E3/{E32539C1-64D1-8D6F-B0AF-04A4FFD6D2D1}.wem"
      },
      {
       "Id": "534082943",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Bee Recorded Individually 05 - Epidemic Sound.wav",
-      "CachePath": "24/{24A1186D-CCF2-C9B0-9020-AF8952728A32}.wem"
+      "CachePath": "92/{92C9B2BA-DA24-81D8-D34A-EDE898522CAD}.wem"
      },
      {
       "Id": "563643609",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_River, Small, Distant Waterfall 02 - Epidemic Sound.wav",
-      "CachePath": "20/{200A0C78-51E6-887D-CF1B-D090ABE8FBCF}.wem"
+      "CachePath": "C7/{C730652E-288D-F208-C971-2A8E80488C7C}.wem"
      },
      {
       "Id": "652546354",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Halfway Heart (Instrumental Version) - Bluma Petersen.wav",
-      "CachePath": "05/{0577D6E8-A74A-54F1-A797-49873A9C5741}.wem"
+      "CachePath": "E0/{E06EE631-E31F-EE3F-2EA1-6F4A2D11795A}.wem"
      },
      {
       "Id": "837795675",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Wood, Creaky, Leather Sole, Medium - Epidemic Sound.wav",
-      "CachePath": "4F/{4FC1DDAE-D830-0E73-6E82-16C1C3018916}.wem"
+      "CachePath": "96/{9641727E-B3DE-740C-3A6E-B1D6E12B7ADD}.wem"
      },
      {
       "Id": "898154532",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming - Epidemic Sound.wav",
-      "CachePath": "E7/{E710E5FB-05A6-0CEB-01C8-0559079AB6F9}.wem"
+      "CachePath": "1F/{1F4474D0-C73E-085C-564F-7CEFA8DEE812}.wem"
      },
      {
       "Id": "1014171501",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Walk, Grass, Mono - Epidemic Sound.wav",
-      "CachePath": "05/{057B6F36-8180-E796-5212-E33CBCD3942A}.wem"
+      "CachePath": "EA/{EAACD79C-4866-BB46-5DA4-B51A07413F83}.wem"
      }
     ],
     "Events": [
@@ -203,7 +203,7 @@
       "Name": "Play_WaterFall",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_WaterFall",
       "GUID": "{435D3D91-4A8A-47BA-8B00-076FC25966C7}",
-      "MaxAttenuation": "70",
+      "MaxAttenuation": "1",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -216,7 +216,7 @@
       "Name": "Play_Waves",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Waves",
       "GUID": "{0E2F4936-22C7-48AF-B85D-56DD99E9C05B}",
-      "MaxAttenuation": "70",
+      "MaxAttenuation": "1",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -286,6 +286,6 @@
     ]
    }
   ],
-  "FileHash": "{FD7F0B9C-4A5C-9D96-BCA8-52299E798A32}"
+  "FileHash": "{B9F1AAC3-797C-539E-6CE3-81B984F9425F}"
  }
 }

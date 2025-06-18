@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{0A9012B5-8A20-4651-B360-353E5D05D498}",
     "Language": "SFX",
-    "Hash": "{DB4E8F7D-4694-2467-0608-4445830AF390}",
+    "Hash": "{D500977F-FEEE-168A-BBFC-0DAD920B8B0A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Trivia",
     "ShortName": "Trivia",
     "Path": "Trivia.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound.wav",
-      "CachePath": "77/{77B36D24-2CB2-FDA6-12CC-82A0E9B3949C}.wem"
+      "CachePath": "AC/{ACC59E5F-E97F-359E-70DD-50F9CA2019EA}.wem"
      },
      {
       "Id": "154386619",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound.wav",
-      "CachePath": "90/{908BF718-48DE-A8F5-A480-9DBE7CC5301A}.wem"
+      "CachePath": "45/{45234DE2-C0C6-3812-D042-F5507FA232E6}.wem"
      },
      {
       "Id": "190345228",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav",
-      "CachePath": "E7/{E79D9E98-26B0-3176-EAB7-E57E73560811}.wem"
+      "CachePath": "0E/{0ECC5FBF-DAD9-ACE8-02CA-45235079A281}.wem"
      },
      {
       "Id": "288210764",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav",
-      "CachePath": "21/{21730734-DF3C-62F3-8C18-D6E588B5795A}.wem"
+      "CachePath": "29/{298CD813-0165-B2AE-2A80-DEFAA92A8457}.wem"
      },
      {
       "Id": "290746911",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Game, Jingle, Chime, Negative 02 - Epidemic Sound.wav",
-      "CachePath": "A2/{A2644C86-A7CC-6419-3F3C-EC9AC6395072}.wem"
+      "CachePath": "83/{83092FCD-AFB1-C963-B9B0-F8715C4835F6}.wem"
      },
      {
       "Id": "546345719",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound.wav",
-      "CachePath": "17/{1706B648-D323-C784-6A87-59FFC7D7A0D7}.wem"
+      "CachePath": "F7/{F7A3ADAB-223B-0103-7B42-4D81E8CD13A2}.wem"
      },
      {
       "Id": "819777711",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SDR2 OST_ -1-08- Ms. Monomi's Practice Lesson.wav",
-      "CachePath": "14/{1443AE7D-31B3-007D-8DA9-B3355A21201E}.wem"
+      "CachePath": "66/{66DB9EC1-34C4-B952-29D3-7FB99DFCE69B}.wem"
      },
      {
       "Id": "880961620",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound.wav",
-      "CachePath": "B8/{B8510C4E-F7A3-B34A-A800-2ED8C188A1CF}.wem"
+      "CachePath": "CB/{CB2EDED8-DBF9-8B30-C035-C79A9399B1F0}.wem"
      },
      {
       "Id": "918913375",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound.wav",
-      "CachePath": "A6/{A66565C8-C319-5610-2075-F06AE0CAD883}.wem"
+      "CachePath": "74/{74CD655E-A5A3-7371-6375-8C366D941008}.wem"
      },
      {
       "Id": "984098091",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Gourmet Race-Super Smash Bros. Ultimate(Kirby Super Star).wav",
-      "CachePath": "91/{91A29242-44CB-023E-EEFB-F5FFB3D1A809}.wem"
+      "CachePath": "50/{504F1F34-BD8C-DE58-0EBD-6E4938940546}.wem"
      }
     ],
     "Events": [
@@ -213,6 +213,6 @@
     ]
    }
   ],
-  "FileHash": "{059C3C38-B188-9FD1-D14A-735ADE0D2E02}"
+  "FileHash": "{2D065CE9-50C3-6DF1-F60D-34E18554B6E5}"
  }
 }

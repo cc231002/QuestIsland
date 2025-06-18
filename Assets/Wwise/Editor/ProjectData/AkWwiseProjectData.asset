@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 280c6f5ae24de74aae9d7986e8affa9f
     GuidInternal: 
-    m_lastTime: -8584514489884191864
+    m_lastTime: -8584513696588456529
     List:
     - name: MainSounds
       guid: a07104412d9b85438e72ccf7111eb7b2
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 091c9c1deb694149a3d178e86bbb042b
     GuidInternal: 
-    m_lastTime: -8584514489896690557
+    m_lastTime: -8584513696597057958
     List:
     - name: Play_Bee
       guid: ea545ce4e9e91342ba2c0a3ce174c3d8
@@ -359,7 +359,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 913d5d438a4aba478b00076fc25966c7
       Path: Events\Default Work Unit\Play_WaterFall
-      maxAttenuation: 70
+      maxAttenuation: 1
       maxDuration: 0
       minDuration: 0
     - name: Play_Waves
@@ -376,7 +376,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 36492f0ec722af48b85d56dd99e9c05b
       Path: Events\Default Work Unit\Play_Waves
-      maxAttenuation: 70
+      maxAttenuation: 1
       maxDuration: 0
       minDuration: 0
     - name: Play_Win
