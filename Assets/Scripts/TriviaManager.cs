@@ -2,32 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI; // Add this for Button
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TriviaManager : MonoBehaviour
 {
-    // JSON data classes
+    // --- JSON Data classes ---
     [System.Serializable]
-    public class TriviaData
-    {
-        public TriviaCategories trivia_questions;
-    }
-
+    public class TriviaData { public TriviaCategories trivia_questions; }
     [System.Serializable]
     public class TriviaCategories
     {
-        public GeographyCategory Geography;
+        public CategoryData Geography, Math, Science, History, Sports, Psychology;
     }
-
     [System.Serializable]
-    public class GeographyCategory
+    public class CategoryData
     {
-        public List<Question> Beginner;
-        public List<Question> Intermediate;
-        public List<Question> Hard;
+        public List<Question> Beginner, Intermediate, Hard;
     }
-
     [System.Serializable]
     public class Question
     {
@@ -36,7 +28,6 @@ public class TriviaManager : MonoBehaviour
         public List<Option> options;
         public string answer;
     }
-
     [System.Serializable]
     public class Option
     {
@@ -44,27 +35,70 @@ public class TriviaManager : MonoBehaviour
         public string value;
     }
 
-    // UI References
-    public TMP_Text questionTextUI;
-    public TMP_Text[] answerTextUIs;
+    // --- UI Elements ---
+    public TMP_Text categoryTextUI;     // shows the category name
+    public TMP_Text questionTextUI;     // shows the question text
+    public TMP_Text[] answerTextUIs;    // texts for answers
+    public Button[] answerButtons;      // buttons for answers
+    public TMP_Text timerTextUI;        // timer countdown text
+    public Image timerFillBar;          // timer fill bar image
 
-    public Button[] answerButtons; // Buttons A, B, C, D
+    public TMP_Text questionCountTextUI; // NEW: shows question number like 1/3
 
+    // --- Timer stuff ---
+    public float maxTimePerQuestion = 20f;
+    private float currentTime;
+    private bool isTimerRunning = false;
+
+    public Color normalColor = Color.green; // timer bar normal color
+
+    // --- Game data ---
+    private string selectedCategory;
     private List<Question> selectedQuestions = new List<Question>();
     private int currentQuestionIndex = 0;
 
+    // NEW: keep track of which button was pressed wrong
+    private int pressedWrongIndex = -1;
+
     void Start()
     {
+        selectedCategory = PlayerPrefs.GetString("SelectedCategory", "Geography");
+        categoryTextUI.text = selectedCategory + ":";
+
         LoadQuestions();
         ShowQuestion();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) CheckAnswer("A");
-        if (Input.GetKeyDown(KeyCode.Alpha2)) CheckAnswer("B");
-        if (Input.GetKeyDown(KeyCode.Alpha3)) CheckAnswer("C");
-        if (Input.GetKeyDown(KeyCode.Alpha4)) CheckAnswer("D");
+        // Keyboard shortcuts to answer for quick testing
+        if (Input.GetKeyDown(KeyCode.Alpha1)) CheckAnswer("A", 0);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) CheckAnswer("B", 1);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) CheckAnswer("C", 2);
+        if (Input.GetKeyDown(KeyCode.Alpha4)) CheckAnswer("D", 3);
+
+        // Timer countdown
+        if (isTimerRunning)
+        {
+            currentTime -= Time.deltaTime;
+            if (currentTime < 0f) currentTime = 0f;
+
+            float ratio = currentTime / maxTimePerQuestion;
+            timerFillBar.fillAmount = ratio;
+            timerTextUI.text = Mathf.Ceil(currentTime).ToString();
+
+            if (currentTime <= 0f)
+            {
+                isTimerRunning = false;
+                Debug.Log("Time's up!");
+                HeartManager.Instance.LoseHeart();
+
+                // Highlight correct answer when time runs out
+                HighlightAnswers(-1); // means no answer was pressed
+
+                StartCoroutine(NextQuestionAfterDelay(1f));
+            }
+        }
     }
 
     void LoadQuestions()
@@ -72,49 +106,71 @@ public class TriviaManager : MonoBehaviour
         TextAsset jsonFile = Resources.Load<TextAsset>("trivia_question_bank");
         if (jsonFile == null)
         {
-            Debug.LogError("JSON file not found in Resources!");
+            Debug.LogError("JSON file not found!");
             return;
         }
 
-        // Wrap the root object manually
-        string wrappedJson = jsonFile.text;
-        TriviaData triviaData = JsonUtility.FromJson<TriviaData>(wrappedJson);
-
+        TriviaData triviaData = JsonUtility.FromJson<TriviaData>(jsonFile.text);
         if (triviaData == null || triviaData.trivia_questions == null)
         {
             Debug.LogError("Failed to parse trivia data.");
             return;
         }
 
-        GeographyCategory geo = triviaData.trivia_questions.Geography;
+        CategoryData cat = selectedCategory switch
+        {
+            "Geography" => triviaData.trivia_questions.Geography,
+            "Math" => triviaData.trivia_questions.Math,
+            "Science" => triviaData.trivia_questions.Science,
+            "History" => triviaData.trivia_questions.History,
+            "Sports" => triviaData.trivia_questions.Sports,
+            "Psychology" => triviaData.trivia_questions.Psychology,
+            _ => null
+        };
 
-        // Randomly select one question per difficulty
-        if (geo.Beginner.Count > 0)
-            selectedQuestions.Add(geo.Beginner[Random.Range(0, geo.Beginner.Count)]);
-        if (geo.Intermediate.Count > 0)
-            selectedQuestions.Add(geo.Intermediate[Random.Range(0, geo.Intermediate.Count)]);
-        if (geo.Hard.Count > 0)
-            selectedQuestions.Add(geo.Hard[Random.Range(0, geo.Hard.Count)]);
+        if (cat == null)
+        {
+            Debug.LogError("Invalid category: " + selectedCategory);
+            return;
+        }
+
+        // Only pick 3 questions max (one from each difficulty if available)
+        if (cat.Beginner.Count > 0)
+            selectedQuestions.Add(cat.Beginner[Random.Range(0, cat.Beginner.Count)]);
+        if (cat.Intermediate.Count > 0)
+            selectedQuestions.Add(cat.Intermediate[Random.Range(0, cat.Intermediate.Count)]);
+        if (cat.Hard.Count > 0)
+            selectedQuestions.Add(cat.Hard[Random.Range(0, cat.Hard.Count)]);
     }
 
     void ShowQuestion()
     {
+        // Reset timer and visuals
+        currentTime = maxTimePerQuestion;
+        isTimerRunning = true;
+        timerFillBar.fillAmount = 1f;
+        timerFillBar.color = normalColor;
+        timerTextUI.text = Mathf.Ceil(maxTimePerQuestion).ToString();
+
+        // Reset any button colors back to normal and interactable
+        ResetAnswerButtonColors();
+        pressedWrongIndex = -1;
+
+        // Show question count like "1/3"
+        questionCountTextUI.text = (currentQuestionIndex + 1) + "/" + selectedQuestions.Count;
+
         if (currentQuestionIndex >= selectedQuestions.Count)
         {
             questionTextUI.text = "You finished all questions!";
-            foreach (var txt in answerTextUIs) txt.text = "";
+            foreach (var txt in answerTextUIs)
+                txt.text = "";
 
-            // Optionally disable buttons
             foreach (var btn in answerButtons)
-            {
                 btn.interactable = false;
-            }
 
-            // Start scene change delay
-            StartCoroutine(LoadSceneAfterDelay(3f)); // waits 3 seconds
+            StartCoroutine(LoadSceneAfterDelay(3f));
             return;
         }
-
 
         Question q = selectedQuestions[currentQuestionIndex];
         questionTextUI.text = q.question;
@@ -125,54 +181,106 @@ public class TriviaManager : MonoBehaviour
             {
                 string optionKey = q.options[i].key;
 
-                // Set the text of the button
                 TMP_Text buttonText = answerButtons[i].GetComponentInChildren<TMP_Text>();
                 buttonText.text = $"{optionKey}: {q.options[i].value}";
 
-                // Clear previous listeners to avoid stacking
                 answerButtons[i].onClick.RemoveAllListeners();
 
-                // Add a listener for this specific option
-                answerButtons[i].onClick.AddListener(() => CheckAnswer(optionKey));
+                // The trick to avoid wrong closure problem: capture local var
+                string capturedKey = optionKey;
+                int capturedIndex = i;
+                answerButtons[i].onClick.AddListener(() => CheckAnswer(capturedKey, capturedIndex));
+
+                answerButtons[i].gameObject.SetActive(true);
+                answerButtons[i].interactable = true;
             }
             else
             {
                 answerButtons[i].gameObject.SetActive(false);
             }
         }
-
     }
 
-    void CheckAnswer(string selectedOption)
-{
-    if (currentQuestionIndex >= selectedQuestions.Count) return;
+    // Modified CheckAnswer to know which button index was clicked
+    void CheckAnswer(string selectedOption, int buttonIndex)
+    {
+        if (!isTimerRunning) return;
 
-    Question currentQuestion = selectedQuestions[currentQuestionIndex];
+        isTimerRunning = false;
+
+        Question currentQuestion = selectedQuestions[currentQuestionIndex];
 
         if (selectedOption == currentQuestion.answer)
         {
             Debug.Log("Correct!");
-            AkUnitySoundEngine.PostEvent("Play_Correct", gameObject); // Play correct sound
+            AkUnitySoundEngine.PostEvent("Play_Correct", gameObject);
         }
         else
         {
             Debug.Log("Wrong!");
-            AkUnitySoundEngine.PostEvent("Play_Wrong", gameObject); // Play wrong sound
+            AkUnitySoundEngine.PostEvent("Play_Wrong", gameObject);
             HeartManager.Instance.LoseHeart();
+            pressedWrongIndex = buttonIndex; // remember wrong pressed button index
+        }
 
+        // Show color feedback
+        HighlightAnswers(pressedWrongIndex);
+
+        StartCoroutine(NextQuestionAfterDelay(0.8f));
     }
 
-    currentQuestionIndex++;
-    ShowQuestion();
-}
+    // This highlights the right answer green, and wrong pressed red
+    void HighlightAnswers(int wrongPressedIndex)
+    {
+        Question currentQuestion = selectedQuestions[currentQuestionIndex];
+
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            if (!answerButtons[i].gameObject.activeSelf) continue;
+
+            TMP_Text btnText = answerButtons[i].GetComponentInChildren<TMP_Text>();
+            string btnTextStr = btnText.text;
+
+            // check if this button is the correct answer
+            if (btnTextStr.StartsWith(currentQuestion.answer + ":"))
+            {
+                // green background color for correct answer
+                answerButtons[i].GetComponent<Image>().color = Color.green;
+                answerButtons[i].interactable = false;
+            }
+            else if (i == wrongPressedIndex)
+            {
+                // red background for wrong pressed answer
+                answerButtons[i].GetComponent<Image>().color = Color.red;
+                answerButtons[i].interactable = false;
+            }
+            else
+            {
+                // disable interaction for other buttons
+                answerButtons[i].interactable = false;
+            }
+        }
+    }
+
+    void ResetAnswerButtonColors()
+    {
+        foreach (var btn in answerButtons)
+        {
+            btn.GetComponent<Image>().color = Color.white; // reset to white background
+            btn.interactable = true;
+        }
+    }
+
+    IEnumerator NextQuestionAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        currentQuestionIndex++;
+        ShowQuestion();
+    }
 
     IEnumerator LoadSceneAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("GameScene");
     }
-
-
-    
-    
 }
