@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="MainSounds" ID="{410471A0-9B2D-4385-8E72-CCF7111EB7B2}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Walk" ID="{7E6B1FFF-9F5A-4059-87C4-7C5685D9F079}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Bee" ID="{E45C54EA-E9E9-4213-BA2C-0A3CE174C3D8}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Birds" ID="{8DE561E1-FCDC-4268-9622-EBC114F0669E}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Wind" ID="{4355965E-3F98-43B5-9F71-577445E7172F}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>

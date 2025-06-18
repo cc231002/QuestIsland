@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="Water" ID="{8D02600D-86A3-4877-8751-82EDAB32AA41}" ShortID="778940031">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="70"/>
+						<Property Name="RadiusMax" Type="Real64" Value="1"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -22,20 +22,14 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>19.2014946666667</XPos>
-											<YPos>-1.0932</YPos>
+											<XPos>0.16736</XPos>
+											<YPos>-0.93984</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>48.105512</XPos>
-											<YPos>-16.35067</YPos>
-											<Flags>0</Flags>
-											<SegmentShape>Log2</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>70</XPos>
-											<YPos>-30.69322</YPos>
+											<XPos>1</XPos>
+											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -180,7 +174,7 @@
 				</Attenuation>
 				<Attenuation Name="Wind" ID="{063D52A6-99A4-452A-9ECA-01F7EC31E61B}" ShortID="695768135">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="80"/>
+						<Property Name="RadiusMax" Type="Real64" Value="70"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -196,13 +190,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>22.8233</XPos>
+											<XPos>19.9703875</XPos>
 											<YPos>-2.05062</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>80</XPos>
+											<XPos>70</XPos>
 											<YPos>-19.23506</YPos>
 											<Flags>37</Flags>
 										</Point>

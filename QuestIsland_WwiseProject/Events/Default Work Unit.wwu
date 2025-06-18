@@ -201,6 +201,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Walk" ID="{7E6B1FFF-9F5A-4059-87C4-7C5685D9F079}">
+					<ChildrenList>
+						<Action Name="" ID="{8DF1A4BE-D17A-4C43-9456-FCA5FE6BCA53}" ShortID="386387544">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Walk" ID="{EE69E51A-FBE2-4EBF-8515-DEF1D27951F4}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
