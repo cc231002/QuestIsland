@@ -49,6 +49,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  rotationSpeed: 10
+  cameraTransform: {fileID: 0}
+  canMove: 1
 --- !u!54 &3893675196404545043
 Rigidbody:
   m_ObjectHideFlags: 0
