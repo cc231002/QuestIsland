@@ -157,19 +157,21 @@ public class TriviaManager : MonoBehaviour
         pressedWrongIndex = -1;
 
         // Show question count like "1/3"
-        questionCountTextUI.text = (currentQuestionIndex + 1) + "/" + selectedQuestions.Count;
+        questionCountTextUI.text = currentQuestionIndex + 1 + "/" + selectedQuestions.Count;
 
         if (currentQuestionIndex >= selectedQuestions.Count)
         {
             questionTextUI.text = "You finished all questions!";
-            foreach (var txt in answerTextUIs)
-                txt.text = "";
+        questionCountTextUI.text = ""; // for not showing 4/3 angezeigt wird
 
-            foreach (var btn in answerButtons)
-                btn.interactable = false;
+        foreach (var txt in answerTextUIs)
+            txt.text = "";
 
-            StartCoroutine(LoadSceneAfterDelay(3f));
-            return;
+        foreach (var btn in answerButtons)
+            btn.interactable = false;
+
+        StartCoroutine(LoadSceneAfterDelay(3f));
+        return;
         }
 
         Question q = selectedQuestions[currentQuestionIndex];
