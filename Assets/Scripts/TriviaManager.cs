@@ -60,6 +60,10 @@ public class TriviaManager : MonoBehaviour
     // NEW: keep track of which button was pressed wrong
     private int pressedWrongIndex = -1;
 
+    public Animator animator;
+    public GameObject playerModel;
+    
+
     void Start()
     {
         selectedCategory = PlayerPrefs.GetString("SelectedCategory", "Geography");
@@ -67,6 +71,16 @@ public class TriviaManager : MonoBehaviour
 
         LoadQuestions();
         ShowQuestion();
+
+        if (playerModel != null)
+        {
+            animator = GameObject.Find("Player2").GetComponent<Animator>();
+        }
+
+        if (animator != null)
+    {
+        animator.SetBool("pressButton", false);  // Make sure it starts false
+    }
     }
 
     void Update()
@@ -145,12 +159,20 @@ public class TriviaManager : MonoBehaviour
 
     void ShowQuestion()
     {
+
+   if (animator != null)
+{
+    animator.SetBool("pressButton", false);
+}
+
         // Reset timer and visuals
         currentTime = maxTimePerQuestion;
         isTimerRunning = true;
         timerFillBar.fillAmount = 1f;
         timerFillBar.color = normalColor;
         timerTextUI.text = Mathf.Ceil(maxTimePerQuestion).ToString();
+
+     
 
         // Reset any button colors back to normal and interactable
         ResetAnswerButtonColors();
@@ -210,6 +232,14 @@ public class TriviaManager : MonoBehaviour
 
         isTimerRunning = false;
 
+        if (animator != null)
+{
+    animator.SetBool("pressButton", true);
+    StartCoroutine(ResetPressButtonAfterDelay(0.5f));
+}
+
+        
+
         Question currentQuestion = selectedQuestions[currentQuestionIndex];
 
         if (selectedOption == currentQuestion.answer)
@@ -224,6 +254,8 @@ public class TriviaManager : MonoBehaviour
             HeartManager.Instance.LoseHeart();
             pressedWrongIndex = buttonIndex; // remember wrong pressed button index
         }
+
+    
 
         // Show color feedback
         HighlightAnswers(pressedWrongIndex);
@@ -285,4 +317,14 @@ public class TriviaManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("GameScene");
     }
+
+
+
+IEnumerator ResetPressButtonAfterDelay(float delay)
+{
+    yield return new WaitForSeconds(delay);
+    animator.SetBool("pressButton", false);
+}
+
+
 }
