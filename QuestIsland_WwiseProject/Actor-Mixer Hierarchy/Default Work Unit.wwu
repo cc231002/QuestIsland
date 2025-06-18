@@ -19,7 +19,7 @@
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -66,6 +66,7 @@
 						<RandomSequenceContainer Name="WaterFall" ID="{B4F82E41-4799-4C8B-9DFD-50B2AEBBB0FC}" ShortID="1056076614">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -78,7 +79,7 @@
 									<ObjectRef Name="Water" ID="{8D02600D-86A3-4877-8751-82EDAB32AA41}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
 								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+									<ObjectRef Name="Ocean" ID="{B7AFF26E-1187-439E-857E-FF99441C7FF5}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
@@ -129,10 +130,16 @@
 						<RandomSequenceContainer Name="Waves" ID="{C775037E-D85C-4846-8EDC-4EB410E2940A}" ShortID="772780803">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>400</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -141,7 +148,7 @@
 									<ObjectRef Name="Water" ID="{8D02600D-86A3-4877-8751-82EDAB32AA41}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
 								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+									<ObjectRef Name="Ocean" ID="{B7AFF26E-1187-439E-857E-FF99441C7FF5}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
@@ -187,6 +194,7 @@
 						<BlendContainer Name="Wind" ID="{F99E9A51-ADA1-44D1-867A-E757370D294C}" ShortID="542301950">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -199,7 +207,7 @@
 									<ObjectRef Name="Wind" ID="{063D52A6-99A4-452A-9ECA-01F7EC31E61B}" WorkUnitID="{C3A75B4D-1D03-4D6A-B20D-E8F5CEAB9293}"/>
 								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+									<ObjectRef Name="Ocean" ID="{B7AFF26E-1187-439E-857E-FF99441C7FF5}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
@@ -1279,9 +1287,12 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="ButtonClick" ID="{2C5C5EA0-B1B5-4EB5-ABDB-7CB545636F6E}" ShortID="259109522">
+							<PropertyList>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+									<ObjectRef Name="Sounds" ID="{2890C187-0D42-4D9C-B561-B067A5879A6A}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
