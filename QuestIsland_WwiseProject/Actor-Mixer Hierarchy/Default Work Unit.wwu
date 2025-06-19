@@ -684,9 +684,66 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Water" ID="{9A6FE606-4D4F-45D8-A62E-5F10441BBD4A}" ShortID="708106733">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ES_Walking Through Water, Splashes - Epidemic Sound" ID="{6A98389F-D83C-4970-B82E-7F8D018EB030}" ShortID="1052874825">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-130</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ES_Walking Through Water, Splashes - Epidemic Sound" ID="{3D987F7B-8050-4920-9D0E-B8444A5C8C50}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.753920386007238"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.63872135102532"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ES_Walking Through Water, Splashes - Epidemic Sound.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1049745348"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ES_Walking Through Water, Splashes - Epidemic Sound" ID="{3D987F7B-8050-4920-9D0E-B8444A5C8C50}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Water" ID="{9A6FE606-4D4F-45D8-A62E-5F10441BBD4A}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Grass" ID="{93E02B4D-8821-44BF-AE4E-D8776EA11A36}"/>
 									</GroupingBehavior>
@@ -705,6 +762,12 @@
 										<SwitchRef Name="Grass" ID="{052B36B8-2E4C-4024-BDE0-422E02319DCA}"/>
 										<ItemList>
 											<ItemRef Name="Grass" ID="{93E02B4D-8821-44BF-AE4E-D8776EA11A36}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{BACF95B8-0C5F-4D0B-9F76-893BADFD5CA7}"/>
+										<ItemList>
+											<ItemRef Name="Water" ID="{9A6FE606-4D4F-45D8-A62E-5F10441BBD4A}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

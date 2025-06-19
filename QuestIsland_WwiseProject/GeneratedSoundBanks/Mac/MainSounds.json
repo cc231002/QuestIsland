@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{0FEAA714-AA3C-3029-5615-F109DCB33E12}",
+    "Hash": "{BEBF7AC4-29DC-2B0C-BCF7-ECDA93D67584}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -94,6 +94,14 @@
       "Location": "Memory",
       "ShortName": "ES_Walk, Grass, Mono - Epidemic Sound.wav",
       "CachePath": "48/{481D23CC-7574-34B3-77A1-512DB61AF64F}.wem"
+     },
+     {
+      "Id": "1049745348",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Walking Through Water, Splashes - Epidemic Sound.wav",
+      "CachePath": "34/{346BF625-F4AD-D810-6AAB-6A7AE759E92C}.wem"
      }
     ],
     "Events": [
@@ -154,6 +162,19 @@
         "MediaRefs": [
          {
           "Id": "1014171501"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2654748154",
+         "GUID": "{BACF95B8-0C5F-4D0B-9F76-893BADFD5CA7}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "1049745348"
          }
         ]
        },
@@ -276,6 +297,12 @@
         "GUID": "{5808ABF4-ED69-473E-94A2-AE27998939E0}"
        },
        {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Water",
+        "GUID": "{BACF95B8-0C5F-4D0B-9F76-893BADFD5CA7}"
+       },
+       {
         "Id": "4248645337",
         "Name": "Grass",
         "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass",
@@ -286,6 +313,6 @@
     ]
    }
   ],
-  "FileHash": "{BDADAED7-904B-F26D-DD07-A6E75089624C}"
+  "FileHash": "{DB323D4B-77A3-1928-74A6-421374315F02}"
  }
 }

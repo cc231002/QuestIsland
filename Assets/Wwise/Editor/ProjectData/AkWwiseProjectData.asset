@@ -501,7 +501,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 0e42841a31f92348bfe8fbd22ddd9408
     GuidInternal: 
-    m_lastTime: -8584514466896977743
+    m_lastTime: -8584512795604531497
     List:
     - name: Surface
       guid: d9480dec1788cd4fbf2b07ecfc6168ab
@@ -566,6 +566,22 @@ MonoBehaviour:
         - ElementName: Stone
           ObjectType: 10
           guid: d900bb0cf6f5f84c82403483f3ec95f6
+      - name: Water
+        guid: b895cfba5f0c0b4d9f76893badfd5ca7
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0e42841a31f92348bfe8fbd22ddd9408
+        - ElementName: Surface
+          ObjectType: 11
+          guid: d9480dec1788cd4fbf2b07ecfc6168ab
+        - ElementName: Water
+          ObjectType: 10
+          guid: b895cfba5f0c0b4d9f76893badfd5ca7
       - name: Wood
         guid: f4ab085869ed3e4794a2ae27998939e0
         id: 2058049674
@@ -600,7 +616,7 @@ MonoBehaviour:
     m_lastTime: -8584516143005265311
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c00000018000000190000001b0000001c00000020000000210000002200000023000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c00000018000000190000001b0000001c00000020000000210000002200000023000000350000003600000037000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
