@@ -9,8 +9,10 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        PlayerPrefs.DeleteAll();
         PlayClickSound();
         StartCoroutine(LoadSceneWithDelay());
+        
         
     }
 
@@ -18,8 +20,8 @@ public class MainMenu : MonoBehaviour
     {
         PlayClickSound();
         StartCoroutine(RestartWithDelay());
-        PlayerPrefs.DeleteAll();
         HeartManager.Instance.ResetHearts();
+        PlayerPrefs.DeleteAll();
     }
 
     public void QuitGame()
