@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     {
         PlayClickSound();
         StartCoroutine(LoadSceneWithDelay());
+        
     }
 
     public void RestartGame()
