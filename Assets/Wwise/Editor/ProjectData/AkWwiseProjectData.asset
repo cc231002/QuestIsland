@@ -138,7 +138,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ea545ce4e9e91342ba2c0a3ce174c3d8
       Path: Events\Default Work Unit\Play_Bee
-      maxAttenuation: 10
+      maxAttenuation: 15
       maxDuration: 0
       minDuration: 0
     - name: Play_Birds
@@ -156,8 +156,8 @@ MonoBehaviour:
         guid: e161e58ddcfc68429622ebc114f0669e
       Path: Events\Default Work Unit\Play_Birds
       maxAttenuation: 0
-      maxDuration: 202.816
-      minDuration: 202.816
+      maxDuration: 0
+      minDuration: 0
     - name: Play_ButtonClick
       guid: 5498e50a5f509045b75b16b7d79ee172
       id: 3548535810
@@ -411,8 +411,8 @@ MonoBehaviour:
         guid: 5e965543983fb5439f71577445e7172f
       Path: Events\Default Work Unit\Play_Wind
       maxAttenuation: 60
-      maxDuration: 212.8765
-      minDuration: 212.8765
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Wrong
       guid: 24487071781bce4695609b3fb2f1cbbe
       id: 92581801

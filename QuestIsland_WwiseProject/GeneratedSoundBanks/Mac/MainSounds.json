@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{BEBF7AC4-29DC-2B0C-BCF7-ECDA93D67584}",
+    "Hash": "{E0090B4C-0013-DB68-5D15-1A166636BCCA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound.wav",
-      "CachePath": "71/{71B27A93-BB8A-41D7-37C3-564848BFD95F}.wem"
+      "CachePath": "96/{9698759F-14F8-3C5C-8282-F39309430778}.wem"
      },
      {
       "Id": "16778294",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming - Epidemic Sound.wav",
-      "CachePath": "48/{483C3BAD-55C3-CA6E-8EAF-6C449D31BCF7}.wem"
+      "CachePath": "DA/{DAC0B08A-4724-1F58-9166-10E5A91DDCAD}.wem"
      },
      {
       "Id": "1014171501",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Walking Through Water, Splashes - Epidemic Sound.wav",
-      "CachePath": "34/{346BF625-F4AD-D810-6AAB-6A7AE759E92C}.wem"
+      "CachePath": "A0/{A0AA6EBF-0C49-25DC-85E8-AF5B2D11BBFA}.wem"
      }
     ],
     "Events": [
@@ -110,7 +110,7 @@
       "Name": "Play_Bee",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Bee",
       "GUID": "{E45C54EA-E9E9-4213-BA2C-0A3CE174C3D8}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "15",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -123,9 +123,7 @@
       "Name": "Play_Birds",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Birds",
       "GUID": "{8DE561E1-FCDC-4268-9622-EBC114F0669E}",
-      "DurationType": "OneShot",
-      "DurationMin": "202.816",
-      "DurationMax": "202.816",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "898154532"
@@ -251,9 +249,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Wind",
       "GUID": "{4355965E-3F98-43B5-9F71-577445E7172F}",
       "MaxAttenuation": "60",
-      "DurationType": "OneShot",
-      "DurationMin": "212.8765",
-      "DurationMax": "212.8765",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "3506575"
@@ -313,6 +309,6 @@
     ]
    }
   ],
-  "FileHash": "{DB323D4B-77A3-1928-74A6-421374315F02}"
+  "FileHash": "{E2F3478F-6BBE-9FF2-8215-AA740490AF42}"
  }
 }
