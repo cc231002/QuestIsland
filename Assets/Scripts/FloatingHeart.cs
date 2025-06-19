@@ -26,10 +26,8 @@ public class FloatingHeart : MonoBehaviour
         {
             // Make the heart disappear
             gameObject.SetActive(false);
-            // Alternatively, destroy it if no longer needed:
-            // Destroy(gameObject);
-            //Besi put here health logic increase here
-            //Thank you <33
+            
+            //call the method to gain a heart
             HeartManager.Instance.GainHeart();
         }
     }
