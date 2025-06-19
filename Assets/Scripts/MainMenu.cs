@@ -11,12 +11,15 @@ public class MainMenu : MonoBehaviour
     {
         PlayClickSound();
         StartCoroutine(LoadSceneWithDelay());
+        
     }
 
     public void RestartGame()
     {
         PlayClickSound();
         StartCoroutine(RestartWithDelay());
+        PlayerPrefs.DeleteAll();
+        HeartManager.Instance.ResetHearts();
     }
 
     public void QuitGame()
