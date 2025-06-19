@@ -138,9 +138,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: ea545ce4e9e91342ba2c0a3ce174c3d8
       Path: Events\Default Work Unit\Play_Bee
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 10
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Birds
       guid: e161e58ddcfc68429622ebc114f0669e
       id: 3025897706
@@ -156,8 +156,8 @@ MonoBehaviour:
         guid: e161e58ddcfc68429622ebc114f0669e
       Path: Events\Default Work Unit\Play_Birds
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 202.816
+      minDuration: 202.816
     - name: Play_ButtonClick
       guid: 5498e50a5f509045b75b16b7d79ee172
       id: 3548535810
@@ -173,8 +173,8 @@ MonoBehaviour:
         guid: 5498e50a5f509045b75b16b7d79ee172
       Path: Events\Default Work Unit\Play_ButtonClick
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.6437257
+      minDuration: 0.6437257
     - name: Play_Complete
       guid: 9c8a43b48a9d9a45b3192acb1e3ac9d9
       id: 2401712799
@@ -190,8 +190,8 @@ MonoBehaviour:
         guid: 9c8a43b48a9d9a45b3192acb1e3ac9d9
       Path: Events\Default Work Unit\Play_Complete
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.2428699
+      minDuration: 3.2428699
     - name: Play_Correct
       guid: a0ecb81b50ba244eb135175fa622db61
       id: 3335480108
@@ -207,8 +207,8 @@ MonoBehaviour:
         guid: a0ecb81b50ba244eb135175fa622db61
       Path: Events\Default Work Unit\Play_Correct
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4258009
+      minDuration: 1.0561486
     - name: Play_HeartLose
       guid: 006abfe7b3ee5a46a0ebe93d8f7feeac
       id: 3271090145
@@ -224,8 +224,8 @@ MonoBehaviour:
         guid: 006abfe7b3ee5a46a0ebe93d8f7feeac
       Path: Events\Default Work Unit\Play_HeartLose
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.3203139
+      minDuration: 1.3203139
     - name: Play_Heartup
       guid: 51c8acab7fda8d47a34dc181462c80a9
       id: 3022337573
@@ -241,8 +241,8 @@ MonoBehaviour:
         guid: 51c8acab7fda8d47a34dc181462c80a9
       Path: Events\Default Work Unit\Play_Heartup
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.8847039
+      minDuration: 0.8847039
     - name: Play_MainMusic
       guid: 1516d17ad135144495d9541b5a9ad126
       id: 1346240278
@@ -258,8 +258,8 @@ MonoBehaviour:
         guid: 1516d17ad135144495d9541b5a9ad126
       Path: Events\Default Work Unit\Play_MainMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Over
       guid: 01ef835d400bb6429f0a707189ea3547
       id: 2348692292
@@ -275,8 +275,8 @@ MonoBehaviour:
         guid: 01ef835d400bb6429f0a707189ea3547
       Path: Events\Default Work Unit\Play_Over
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 98.638374
+      minDuration: 98.638374
     - name: Play_StartMusic
       guid: 4dea6d430a4c8e47901f7d0f57a3e471
       id: 1035306431
@@ -292,8 +292,8 @@ MonoBehaviour:
         guid: 4dea6d430a4c8e47901f7d0f57a3e471
       Path: Events\Default Work Unit\Play_StartMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Timer
       guid: f34067c981adfb46abe23d8aa9ba3320
       id: 4169444829
@@ -309,8 +309,8 @@ MonoBehaviour:
         guid: f34067c981adfb46abe23d8aa9ba3320
       Path: Events\Default Work Unit\Play_Timer
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.41896942
+      minDuration: 0.41896942
     - name: Play_TriviaMusic
       guid: ca12618436f9bf4b8773532db98d0a14
       id: 1573978988
@@ -326,8 +326,8 @@ MonoBehaviour:
         guid: ca12618436f9bf4b8773532db98d0a14
       Path: Events\Default Work Unit\Play_TriviaMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Walk
       guid: 12b30ef580277c44a70d683547e5c1ee
       id: 1589278981
@@ -343,8 +343,8 @@ MonoBehaviour:
         guid: 12b30ef580277c44a70d683547e5c1ee
       Path: Events\Default Work Unit\Play_Walk
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_WaterFall
       guid: 913d5d438a4aba478b00076fc25966c7
       id: 467174588
@@ -359,9 +359,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 913d5d438a4aba478b00076fc25966c7
       Path: Events\Default Work Unit\Play_WaterFall
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 60
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Waves
       guid: 36492f0ec722af48b85d56dd99e9c05b
       id: 374167564
@@ -376,9 +376,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 36492f0ec722af48b85d56dd99e9c05b
       Path: Events\Default Work Unit\Play_Waves
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 60
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Win
       guid: a53e4172e55f3842b9cfe679aed4da1f
       id: 2955987680
@@ -394,8 +394,8 @@ MonoBehaviour:
         guid: a53e4172e55f3842b9cfe679aed4da1f
       Path: Events\Default Work Unit\Play_Win
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 9.10932
+      minDuration: 9.10932
     - name: Play_Wind
       guid: 5e965543983fb5439f71577445e7172f
       id: 1020223172
@@ -410,9 +410,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5e965543983fb5439f71577445e7172f
       Path: Events\Default Work Unit\Play_Wind
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 60
+      maxDuration: 212.8765
+      minDuration: 212.8765
     - name: Play_Wrong
       guid: 24487071781bce4695609b3fb2f1cbbe
       id: 92581801
@@ -428,8 +428,8 @@ MonoBehaviour:
         guid: 24487071781bce4695609b3fb2f1cbbe
       Path: Events\Default Work Unit\Play_Wrong
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.7067386
+      minDuration: 1.7067386
     - name: Stop_Walk
       guid: ff1f6b7e5a9f594087c47c5685d9f079
       id: 3140964691
@@ -445,8 +445,8 @@ MonoBehaviour:
         guid: ff1f6b7e5a9f594087c47c5685d9f079
       Path: Events\Default Work Unit\Stop_Walk
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{1E76258D-5A8E-0C6C-6BDB-B3153308FEFF}",
+    "Hash": "{0FEAA714-AA3C-3029-5615-F109DCB33E12}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -102,7 +102,7 @@
       "Name": "Play_Bee",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Bee",
       "GUID": "{E45C54EA-E9E9-4213-BA2C-0A3CE174C3D8}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "10",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -286,6 +286,6 @@
     ]
    }
   ],
-  "FileHash": "{6FAA53F4-6012-28D1-27F8-10FD87BD6833}"
+  "FileHash": "{BDADAED7-904B-F26D-DD07-A6E75089624C}"
  }
 }
