@@ -8,8 +8,10 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private float currentYaw = 0f;
     private float currentPitch = 20f; // Optional initial pitch
-    public float minPitch = -30f;
+    public float minPitch = 5f;
     public float maxPitch = 60f;
+    
+
 
     void LateUpdate()
     {

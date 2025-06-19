@@ -63,7 +63,7 @@ public class TriviaManager : MonoBehaviour
     public Animator animator;
     public GameObject playerModel;
     private bool isGameOver = false;
-    
+
 
     void Start()
     {
@@ -175,7 +175,7 @@ public class TriviaManager : MonoBehaviour
         timerFillBar.color = normalColor;
         timerTextUI.text = Mathf.Ceil(maxTimePerQuestion).ToString();
 
-     
+
 
         // Reset any button colors back to normal and interactable
         ResetAnswerButtonColors();
@@ -187,17 +187,17 @@ public class TriviaManager : MonoBehaviour
         if (currentQuestionIndex >= selectedQuestions.Count)
         {
             questionTextUI.text = "You finished all questions!";
-        questionCountTextUI.text = ""; // for not showing 4/3 angezeigt wird
+            questionCountTextUI.text = ""; // for not showing 4/3 angezeigt wird
 
-        foreach (var txt in answerTextUIs)
-            txt.text = "";
+            foreach (var txt in answerTextUIs)
+                txt.text = "";
 
-        foreach (var btn in answerButtons)
-            btn.interactable = false;
+            foreach (var btn in answerButtons)
+                btn.interactable = false;
 
-        isGameOver = true;
-        StartCoroutine(LoadSceneAfterDelay(3f));
-        return;
+            isGameOver = true;
+            StartCoroutine(LoadSceneAfterDelay(3f));
+            return;
         }
 
         Question q = selectedQuestions[currentQuestionIndex];
@@ -238,8 +238,8 @@ public class TriviaManager : MonoBehaviour
 
         if (animator != null)
         {
-        animator.SetBool("pressButton", true);
-        StartCoroutine(ResetPressButtonAfterDelay(0.5f));
+            animator.SetBool("pressButton", true);
+            StartCoroutine(ResetPressButtonAfterDelay(0.5f));
         }
 
         Question currentQuestion = selectedQuestions[currentQuestionIndex];
@@ -257,7 +257,7 @@ public class TriviaManager : MonoBehaviour
             pressedWrongIndex = buttonIndex; // remember wrong pressed button index
         }
 
-    
+
 
         // Show color feedback
         HighlightAnswers(pressedWrongIndex);
@@ -317,8 +317,22 @@ public class TriviaManager : MonoBehaviour
     IEnumerator LoadSceneAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("GameScene");
+
+        int currentBooth = PlayerPrefs.GetInt("CurrentBooth", 1);
+
+        if (currentBooth >= 6)
+        {
+            // Completed all booths, load win scene
+            SceneManager.LoadScene("WinScene");
+            PlayerPrefs.DeleteKey("CurrentBooth"); // reset for next playthrough if desired
+        }
+        else
+        {
+            PlayerPrefs.SetInt("CurrentBooth", currentBooth + 1);
+            SceneManager.LoadScene("GameScene");
+        }
     }
+
 
     IEnumerator ResetPressButtonAfterDelay(float delay)
     {
