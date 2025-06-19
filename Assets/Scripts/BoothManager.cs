@@ -27,6 +27,6 @@ public class BoothManager : MonoBehaviour
     void UpdateBoothProgressText(int currentBooth)
     {
         int completed = Mathf.Clamp(currentBooth - 1, 0, booths.Length - 1);
-        boothProgressText.text = $"Completed Trivia Quests: {completed}/5";
+        boothProgressText.text = $"Completed Trivia Quests: {completed}/6";
     }
 }
