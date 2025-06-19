@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{0A9012B5-8A20-4651-B360-353E5D05D498}",
     "Language": "SFX",
-    "Hash": "{D7763ADA-A97D-FB39-A6CD-E42FF4923E08}",
+    "Hash": "{7A300ECE-BFD9-B8E7-F7D0-D8551C94A0D6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Trivia",
     "ShortName": "Trivia",
     "Path": "Trivia.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound.wav",
-      "CachePath": "37/{376758AD-FB70-527C-F18D-1F98733D7ECD}.wem"
+      "CachePath": "F7/{F74D6A58-A178-1C32-E89B-EC51B8937367}.wem"
      },
      {
       "Id": "154386619",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound.wav",
-      "CachePath": "13/{1308756A-6B44-669D-DDF9-779EFF93BFC0}.wem"
+      "CachePath": "9C/{9C5B8261-B803-CB97-ACF4-C8A7DE63899E}.wem"
      },
      {
       "Id": "918913375",
@@ -191,6 +191,6 @@
     ]
    }
   ],
-  "FileHash": "{06BEDF41-12FE-CB0C-744F-EC578411752F}"
+  "FileHash": "{6CCC6921-FF08-9C32-11C6-52929385CA11}"
  }
 }

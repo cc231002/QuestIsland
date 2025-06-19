@@ -454,6 +454,8 @@ GameObject:
   - component: {fileID: 9007558}
   - component: {fileID: 9007559}
   - component: {fileID: 9007560}
+  - component: {fileID: 9007562}
+  - component: {fileID: 9007561}
   m_Layer: 0
   m_Name: OceanTriggerZone
   m_TagString: Untagged
@@ -511,6 +513,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &9007561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &9007562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &11236002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -585,6 +624,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2191666470857331508, guid: 8b63f536dcb9512418bb18c53c2565c6, type: 3}
   m_PrefabInstance: {fileID: 11236002}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &11926826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11926827}
+  - component: {fileID: 11926830}
+  - component: {fileID: 11926829}
+  - component: {fileID: 11926828}
+  m_Layer: 0
+  m_Name: Grasstrigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &11926827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11926826}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.4, y: 0, z: 14.9}
+  m_LocalScale: {x: 55.31286, y: 0.10519, z: 57.357117}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1174862515}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11926828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11926826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Grass
+--- !u!114 &11926829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11926826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a47edac22e211d64a993f9697bbe981c, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &11926830
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11926826}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &17023105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1410,6 +1541,8 @@ GameObject:
   - component: {fileID: 41535929}
   - component: {fileID: 41535930}
   - component: {fileID: 41535931}
+  - component: {fileID: 41535933}
+  - component: {fileID: 41535932}
   m_Layer: 0
   m_Name: OceanTriggerZone (4)
   m_TagString: Untagged
@@ -1467,6 +1600,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &41535932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41535928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &41535933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41535928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &52561133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2207,6 +2377,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8227084159337087525, guid: e440ce0d5667e2a40984b024a230418f, type: 3}
   m_PrefabInstance: {fileID: 69558479}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &70156513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70156514}
+  - component: {fileID: 70156517}
+  - component: {fileID: 70156516}
+  - component: {fileID: 70156515}
+  m_Layer: 0
+  m_Name: zone (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &70156514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70156513}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.09136327, z: -0, w: 0.9958177}
+  m_LocalPosition: {x: -3.1609, y: 0, z: -0.92304}
+  m_LocalScale: {x: 2.357429, y: 1, z: 0.46625134}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: -10.484, z: 0}
+--- !u!114 &70156515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70156513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &70156516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70156513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &70156517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70156513}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1001 &73181412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3476,6 +3738,8 @@ GameObject:
   - component: {fileID: 133579251}
   - component: {fileID: 133579252}
   - component: {fileID: 133579253}
+  - component: {fileID: 133579255}
+  - component: {fileID: 133579254}
   m_Layer: 0
   m_Name: OceanTriggerZone (19)
   m_TagString: Untagged
@@ -3533,6 +3797,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &133579254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133579250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &133579255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133579250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &134106744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3784,6 +4085,8 @@ GameObject:
   - component: {fileID: 145007317}
   - component: {fileID: 145007318}
   - component: {fileID: 145007319}
+  - component: {fileID: 145007321}
+  - component: {fileID: 145007320}
   m_Layer: 0
   m_Name: OceanTriggerZone (21)
   m_TagString: Untagged
@@ -3841,6 +4144,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &145007320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145007316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &145007321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145007316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &146261286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4000,6 +4340,8 @@ GameObject:
   - component: {fileID: 152537166}
   - component: {fileID: 152537167}
   - component: {fileID: 152537168}
+  - component: {fileID: 152537170}
+  - component: {fileID: 152537169}
   m_Layer: 0
   m_Name: OceanTriggerZone (2)
   m_TagString: Untagged
@@ -4057,6 +4399,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &152537169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152537165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &152537170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152537165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &157343169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6659,6 +7038,8 @@ GameObject:
   - component: {fileID: 234795818}
   - component: {fileID: 234795819}
   - component: {fileID: 234795820}
+  - component: {fileID: 234795822}
+  - component: {fileID: 234795821}
   m_Layer: 0
   m_Name: OceanTriggerZone (3)
   m_TagString: Untagged
@@ -6716,6 +7097,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &234795821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234795817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &234795822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234795817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &236799286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7933,6 +8351,8 @@ GameObject:
   - component: {fileID: 276539865}
   - component: {fileID: 276539866}
   - component: {fileID: 276539867}
+  - component: {fileID: 276539869}
+  - component: {fileID: 276539868}
   m_Layer: 0
   m_Name: OceanTriggerZone (10)
   m_TagString: Untagged
@@ -7990,6 +8410,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &276539868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276539864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &276539869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276539864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &280476936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9535,6 +9992,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 135235701326032698, guid: b81413d315cea164ea66e16ea4d91ff7, type: 3}
   m_PrefabInstance: {fileID: 350140945}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &350419683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350419684}
+  - component: {fileID: 350419687}
+  - component: {fileID: 350419686}
+  - component: {fileID: 350419685}
+  m_Layer: 0
+  m_Name: zone (24)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &350419684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350419683}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.93935245, z: -0, w: -0.34295326}
+  m_LocalPosition: {x: -2.0323, y: 0, z: -64.842}
+  m_LocalScale: {x: 0.63254344, y: 1, z: 0.6385897}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: 220.114, z: 0}
+--- !u!114 &350419685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350419683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &350419686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350419683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &350419687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350419683}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1001 &350859458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11515,6 +12064,8 @@ GameObject:
   - component: {fileID: 424215181}
   - component: {fileID: 424215182}
   - component: {fileID: 424215183}
+  - component: {fileID: 424215185}
+  - component: {fileID: 424215184}
   m_Layer: 0
   m_Name: OceanTriggerZone (22)
   m_TagString: Untagged
@@ -11572,6 +12123,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &424215184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424215180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &424215185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424215180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &428686228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13262,6 +13850,8 @@ GameObject:
   - component: {fileID: 477715812}
   - component: {fileID: 477715813}
   - component: {fileID: 477715814}
+  - component: {fileID: 477715816}
+  - component: {fileID: 477715815}
   m_Layer: 0
   m_Name: OceanTriggerZone (18)
   m_TagString: Untagged
@@ -13319,6 +13909,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &477715815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477715811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &477715816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477715811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &479941864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15394,6 +16021,8 @@ GameObject:
   - component: {fileID: 540968896}
   - component: {fileID: 540968897}
   - component: {fileID: 540968898}
+  - component: {fileID: 540968900}
+  - component: {fileID: 540968899}
   m_Layer: 0
   m_Name: OceanTriggerZone (8)
   m_TagString: Untagged
@@ -15451,6 +16080,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &540968899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540968895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &540968900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540968895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &546692166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16396,6 +17062,70 @@ PrefabInstance:
       propertyPath: m_Name
       value: SandTrigger 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1640444848864680237, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.36848366
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640444848864680237, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.6649
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640444848864680237, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -59.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070961203215981486, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.56015784
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070961203215981486, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.0086
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070961203215981486, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -64.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273682326531051846, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6385897
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273682326531051846, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4494
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273682326531051846, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243830242513698701, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.23898943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243830242513698701, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.7018
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243830242513698701, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24031
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243830242513698701, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -29.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533141047434593826, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.23819369
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533141047434593826, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533141047434593826, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -51.41
+      objectReference: {fileID: 0}
     - target: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.1
@@ -16436,9 +17166,147 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6361588573143396734, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.70364505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6361588573143396734, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6361588573143396734, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7526740371802974408, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.72186357
+      objectReference: {fileID: 0}
+    - target: {fileID: 7526740371802974408, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.7992
+      objectReference: {fileID: 0}
+    - target: {fileID: 7526740371802974408, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.336
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.49766344
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17438984
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.437939
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5322873
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0007858492
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8465621
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0015212356
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139133592891512091, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 244.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952891762102062629, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.26387188
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952891762102062629, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.599598
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952891762102062629, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -44.10843
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952891762102062629, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.72960323
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952891762102062629, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6838708
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952891762102062629, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 273.706
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090127179427985365, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.54300046
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090127179427985365, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090127179427985365, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -28.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090127179427985365, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.67324984
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090127179427985365, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.73941517
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090127179427985365, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 95.363
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1504446182}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 695579299}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1559378808}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 2053428175}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 70156514}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 10
+      addedObject: {fileID: 1995294290}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 12
+      addedObject: {fileID: 837243049}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 14
+      addedObject: {fileID: 1257802802}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 19
+      addedObject: {fileID: 350419684}
+    - targetCorrespondingSourceObject: {fileID: 5992601765864915264, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
+      insertIndex: 20
+      addedObject: {fileID: 1335954825}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b30bdcd9dffc1c4ab395d16cac89902, type: 3}
 --- !u!1001 &568624882
@@ -20302,6 +21170,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2476844777630685281, guid: f2395e7491b295f4797689e098560288, type: 3}
   m_PrefabInstance: {fileID: 695537387}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &695579298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 695579299}
+  - component: {fileID: 695579302}
+  - component: {fileID: 695579301}
+  - component: {fileID: 695579300}
+  m_Layer: 0
+  m_Name: zone (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &695579299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695579298}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.9510423, z: -0, w: 0.30906072}
+  m_LocalPosition: {x: 8.83, y: 0, z: -0.42}
+  m_LocalScale: {x: 0.70872265, y: 1, z: 0.35017}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: -143.995, z: 0}
+--- !u!114 &695579300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695579298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &695579301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695579298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &695579302
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695579298}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1001 &699618577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23479,6 +24439,8 @@ GameObject:
   - component: {fileID: 824611642}
   - component: {fileID: 824611643}
   - component: {fileID: 824611644}
+  - component: {fileID: 824611646}
+  - component: {fileID: 824611645}
   m_Layer: 0
   m_Name: OceanTriggerZone (11)
   m_TagString: Untagged
@@ -23536,6 +24498,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &824611645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824611641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &824611646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824611641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &828053183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23746,6 +24745,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2476844777630685281, guid: f2395e7491b295f4797689e098560288, type: 3}
   m_PrefabInstance: {fileID: 832700143}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &837243048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837243049}
+  - component: {fileID: 837243052}
+  - component: {fileID: 837243051}
+  - component: {fileID: 837243050}
+  m_Layer: 0
+  m_Name: zone (27)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &837243049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837243048}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0038751687, y: 0.58241725, z: -0.041037448, w: 0.8118443}
+  m_LocalPosition: {x: 33.62, y: 5.081, z: -45.63}
+  m_LocalScale: {x: 2.205733, y: 1, z: 0.41350815}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 2.379, y: 71.227, z: -4.083}
+--- !u!114 &837243050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837243048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &837243051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837243048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &837243052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837243048}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1 &842875714
 GameObject:
   m_ObjectHideFlags: 0
@@ -24114,8 +25205,8 @@ Transform:
   m_GameObject: {fileID: 848238381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.06606499, z: -0, w: 0.9978153}
-  m_LocalPosition: {x: 8.499991, y: 25.5, z: -14.3}
-  m_LocalScale: {x: 46.021164, y: 2.5953674, z: 22.88754}
+  m_LocalPosition: {x: 8.499991, y: 25.5, z: -18.2}
+  m_LocalScale: {x: 46.021164, y: 2.5953674, z: 27.037052}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1886653848}
@@ -24189,6 +25280,8 @@ GameObject:
   - component: {fileID: 851997269}
   - component: {fileID: 851997270}
   - component: {fileID: 851997271}
+  - component: {fileID: 851997273}
+  - component: {fileID: 851997272}
   m_Layer: 0
   m_Name: OceanTriggerZone (1)
   m_TagString: Untagged
@@ -24246,6 +25339,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &851997272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851997268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &851997273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851997268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &856652266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25753,6 +26883,8 @@ GameObject:
   - component: {fileID: 892561980}
   - component: {fileID: 892561981}
   - component: {fileID: 892561982}
+  - component: {fileID: 892561984}
+  - component: {fileID: 892561983}
   m_Layer: 0
   m_Name: OceanTriggerZone (12)
   m_TagString: Untagged
@@ -25810,6 +26942,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &892561983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892561979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &892561984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892561979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &904635121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27363,6 +28532,8 @@ GameObject:
   - component: {fileID: 941494664}
   - component: {fileID: 941494665}
   - component: {fileID: 941494666}
+  - component: {fileID: 941494668}
+  - component: {fileID: 941494667}
   m_Layer: 0
   m_Name: OceanTriggerZone (6)
   m_TagString: Untagged
@@ -27420,6 +28591,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &941494667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941494663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &941494668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941494663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &943806086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32855,6 +34063,8 @@ GameObject:
   - component: {fileID: 1099337512}
   - component: {fileID: 1099337513}
   - component: {fileID: 1099337514}
+  - component: {fileID: 1099337516}
+  - component: {fileID: 1099337515}
   m_Layer: 0
   m_Name: OceanTriggerZone (3)
   m_TagString: Untagged
@@ -32912,6 +34122,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &1099337515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099337511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &1099337516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099337511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1100908385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35525,6 +36772,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 836269303644759404, guid: aa82e02ef557ddf46b4e1aaf3952339a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2070268522}
+    - targetCorrespondingSourceObject: {fileID: 836269303644759404, guid: aa82e02ef557ddf46b4e1aaf3952339a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 11926827}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa82e02ef557ddf46b4e1aaf3952339a, type: 3}
 --- !u!4 &1174862515 stripped
@@ -37264,6 +38514,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2476844777630685281, guid: f2395e7491b295f4797689e098560288, type: 3}
   m_PrefabInstance: {fileID: 1247088576}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1257802801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257802802}
+  - component: {fileID: 1257802805}
+  - component: {fileID: 1257802804}
+  - component: {fileID: 1257802803}
+  m_Layer: 0
+  m_Name: zone (28)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1257802802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257802801}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.99787724, z: -0, w: 0.0651233}
+  m_LocalPosition: {x: 35.965347, y: 0, z: -56.3948}
+  m_LocalScale: {x: 1.2237962, y: 1.3041, z: 0.4566567}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: 172.532, z: 0}
+--- !u!114 &1257802803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257802801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &1257802804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257802801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &1257802805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257802801}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1001 &1261394171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39046,6 +40388,8 @@ GameObject:
   - component: {fileID: 1326304332}
   - component: {fileID: 1326304333}
   - component: {fileID: 1326304334}
+  - component: {fileID: 1326304336}
+  - component: {fileID: 1326304335}
   m_Layer: 0
   m_Name: OceanTriggerZone (20)
   m_TagString: Untagged
@@ -39103,6 +40447,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &1326304335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326304331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &1326304336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326304331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1327473985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39399,6 +40780,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8227084159337087525, guid: e440ce0d5667e2a40984b024a230418f, type: 3}
   m_PrefabInstance: {fileID: 1331160145}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1335954824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335954825}
+  - component: {fileID: 1335954828}
+  - component: {fileID: 1335954827}
+  - component: {fileID: 1335954826}
+  m_Layer: 0
+  m_Name: zone (25)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1335954825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335954824}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.99846035, z: -0, w: 0.05546975}
+  m_LocalPosition: {x: 2.4092, y: 0, z: -64.532}
+  m_LocalScale: {x: 1.054956, y: 1, z: 0.6385897}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: 173.64, z: 0}
+--- !u!114 &1335954826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335954824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &1335954827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335954824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &1335954828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335954824}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1001 &1341086997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42434,6 +43907,8 @@ GameObject:
   - component: {fileID: 1440895371}
   - component: {fileID: 1440895372}
   - component: {fileID: 1440895373}
+  - component: {fileID: 1440895375}
+  - component: {fileID: 1440895374}
   m_Layer: 0
   m_Name: OceanTriggerZone (17)
   m_TagString: Untagged
@@ -42491,6 +43966,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &1440895374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440895370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &1440895375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440895370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1440967580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45268,6 +46780,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2476844777630685281, guid: f2395e7491b295f4797689e098560288, type: 3}
   m_PrefabInstance: {fileID: 1504418748}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1504446181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504446182}
+  - component: {fileID: 1504446185}
+  - component: {fileID: 1504446184}
+  - component: {fileID: 1504446183}
+  m_Layer: 0
+  m_Name: zone (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504446182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504446181}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.37056002, z: -0, w: 0.9288085}
+  m_LocalPosition: {x: -6, y: 0, z: -2.4304008}
+  m_LocalScale: {x: 1.2982382, y: 1, z: 0.35017}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: -43.5, z: 0}
+--- !u!114 &1504446183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504446181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &1504446184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504446181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &1504446185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504446181}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1 &1505754328
 GameObject:
   m_ObjectHideFlags: 0
@@ -45798,6 +47402,8 @@ GameObject:
   - component: {fileID: 1518871446}
   - component: {fileID: 1518871447}
   - component: {fileID: 1518871448}
+  - component: {fileID: 1518871450}
+  - component: {fileID: 1518871449}
   m_Layer: 0
   m_Name: OceanTriggerZone (15)
   m_TagString: Untagged
@@ -45855,6 +47461,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &1518871449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518871445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &1518871450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518871445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1522454429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47537,6 +49180,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2476844777630685281, guid: f2395e7491b295f4797689e098560288, type: 3}
   m_PrefabInstance: {fileID: 1555336501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1559378807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559378808}
+  - component: {fileID: 1559378811}
+  - component: {fileID: 1559378810}
+  - component: {fileID: 1559378809}
+  m_Layer: 0
+  m_Name: zone (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1559378808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559378807}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.09136327, z: -0, w: 0.9958177}
+  m_LocalPosition: {x: -1.9886, y: 0, z: 0.55314}
+  m_LocalScale: {x: 1.8539077, y: 1, z: 0.35017}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: -10.484, z: 0}
+--- !u!114 &1559378809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559378807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &1559378810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559378807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &1559378811
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559378807}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1001 &1560125286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48776,6 +50511,8 @@ GameObject:
   - component: {fileID: 1597164562}
   - component: {fileID: 1597164563}
   - component: {fileID: 1597164564}
+  - component: {fileID: 1597164566}
+  - component: {fileID: 1597164565}
   m_Layer: 0
   m_Name: OceanTriggerZone (13)
   m_TagString: Untagged
@@ -48833,6 +50570,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &1597164565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597164561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &1597164566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597164561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1598854963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51858,6 +53632,8 @@ GameObject:
   - component: {fileID: 1710355272}
   - component: {fileID: 1710355273}
   - component: {fileID: 1710355274}
+  - component: {fileID: 1710355276}
+  - component: {fileID: 1710355275}
   m_Layer: 0
   m_Name: OceanTriggerZone (7)
   m_TagString: Untagged
@@ -51915,6 +53691,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &1710355275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710355271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &1710355276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710355271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &1713615034 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7572562615100458764, guid: d14c96596319d194ba4ea373780c2822, type: 3}
@@ -53386,6 +55199,8 @@ GameObject:
   - component: {fileID: 1759787031}
   - component: {fileID: 1759787032}
   - component: {fileID: 1759787033}
+  - component: {fileID: 1759787035}
+  - component: {fileID: 1759787034}
   m_Layer: 0
   m_Name: OceanTriggerZone (9)
   m_TagString: Untagged
@@ -53443,6 +55258,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &1759787034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759787030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &1759787035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759787030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1760629465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57184,7 +59036,7 @@ Transform:
   m_GameObject: {fileID: 1886653847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.6, y: -24.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59099,6 +60951,8 @@ GameObject:
   - component: {fileID: 1934774642}
   - component: {fileID: 1934774643}
   - component: {fileID: 1934774644}
+  - component: {fileID: 1934774646}
+  - component: {fileID: 1934774645}
   m_Layer: 0
   m_Name: OceanTriggerZone (5)
   m_TagString: Untagged
@@ -59156,6 +61010,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &1934774645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934774641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &1934774646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934774641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1935032074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61659,6 +63550,98 @@ Transform:
   - {fileID: 1562404042}
   m_Father: {fileID: 1886775614}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1995294289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995294290}
+  - component: {fileID: 1995294293}
+  - component: {fileID: 1995294292}
+  - component: {fileID: 1995294291}
+  m_Layer: 0
+  m_Name: zone (26)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1995294290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995294289}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.70369536, z: -0, w: 0.71050185}
+  m_LocalPosition: {x: 32.714, y: 0, z: -34.304}
+  m_LocalScale: {x: 1.4304365, y: 1, z: 0.461419}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.448, z: 0}
+--- !u!114 &1995294291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995294289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &1995294292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995294289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &1995294293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995294289}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1001 &2000853984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62439,6 +64422,8 @@ GameObject:
   - component: {fileID: 2018195844}
   - component: {fileID: 2018195845}
   - component: {fileID: 2018195846}
+  - component: {fileID: 2018195848}
+  - component: {fileID: 2018195847}
   m_Layer: 0
   m_Name: OceanTriggerZone (14)
   m_TagString: Untagged
@@ -62496,6 +64481,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &2018195847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018195843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &2018195848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018195843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &2019734671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63405,6 +65427,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5168159829239232145, guid: 593e0e180426ce14fa1e7f97fe769bc0, type: 3}
   m_PrefabInstance: {fileID: 2051945842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2053428174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053428175}
+  - component: {fileID: 2053428178}
+  - component: {fileID: 2053428177}
+  - component: {fileID: 2053428176}
+  m_Layer: 0
+  m_Name: zone (23)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2053428175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053428174}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.09136327, z: -0, w: 0.9958177}
+  m_LocalPosition: {x: -0.29674, y: 0, z: 1.92}
+  m_LocalScale: {x: 1.1086367, y: 1, z: 0.35017}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 259555152}
+  m_LocalEulerAnglesHint: {x: 0, y: -10.484, z: 0}
+--- !u!114 &2053428176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053428174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Sand
+--- !u!114 &2053428177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053428174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 299c492ff563c714c9338e2d5bf52e03, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!65 &2053428178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053428174}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.617368, y: 1, z: 3.7762625}
+  m_Center: {x: 2.3086836, y: 0, z: -1.3881308}
 --- !u!1001 &2054864926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63786,6 +65900,8 @@ GameObject:
   - component: {fileID: 2066648679}
   - component: {fileID: 2066648680}
   - component: {fileID: 2066648681}
+  - component: {fileID: 2066648683}
+  - component: {fileID: 2066648682}
   m_Layer: 0
   m_Name: OceanTriggerZone (16)
   m_TagString: Untagged
@@ -63843,6 +65959,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warningText3D: {fileID: 7177830}
   damageInterval: 3
+--- !u!114 &2066648682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066648678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89647384e68c04742a6c735bd20bda57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaceType: Water
+--- !u!114 &2066648683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066648678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578e86eac537d94394cfbd7755c255c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 1
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08fe2851e18dc474fa54522d925d09ee, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &2070268521
 GameObject:
   m_ObjectHideFlags: 0
@@ -63872,7 +66025,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 29.660582, y: 0.10519, z: 24.699516}
+  m_LocalScale: {x: 30.690468, y: 0.10519, z: 22.692186}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1174862515}

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{6F0FECE9-F522-C8AC-3FE6-026D2B7AE86A}",
+    "Hash": "{88FC4C56-D9B7-3D51-598F-D0F1BBC9EC6A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound.wav",
-      "CachePath": "37/{376758AD-FB70-527C-F18D-1F98733D7ECD}.wem"
+      "CachePath": "F7/{F74D6A58-A178-1C32-E89B-EC51B8937367}.wem"
      },
      {
       "Id": "3506575",
@@ -353,6 +353,6 @@
     ]
    }
   ],
-  "FileHash": "{D7361060-ECCE-A0D1-2B96-3A07B6FDD51D}"
+  "FileHash": "{3B8812B4-8AFA-7905-A505-0217B77DCFB5}"
  }
 }
