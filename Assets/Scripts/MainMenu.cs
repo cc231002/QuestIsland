@@ -17,6 +17,8 @@ public class MainMenu : MonoBehaviour
     {
         PlayClickSound();
         StartCoroutine(RestartWithDelay());
+        PlayerPrefs.DeleteAll();
+        HeartManager.Instance.ResetHearts();
     }
 
     public void QuitGame()
