@@ -6674,6 +6674,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1552007593}
     m_Modifications:
+    - target: {fileID: 649830322700235896, guid: b071c20ffab0e974a99497c35747c618, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3574638487412273721, guid: b071c20ffab0e974a99497c35747c618, type: 3}
       propertyPath: m_Name
       value: TriviaBooth_5
