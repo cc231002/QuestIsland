@@ -2269,6 +2269,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768334137}
   m_CullTransparentMesh: 1
+--- !u!1 &782113052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1567124691107611848, guid: d14c96596319d194ba4ea373780c2822, type: 3}
+  m_PrefabInstance: {fileID: 674844394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &782113054 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7818754583899863435, guid: d14c96596319d194ba4ea373780c2822, type: 3}
+  m_PrefabInstance: {fileID: 674844394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &782139753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,6 +2411,8 @@ MonoBehaviour:
   questionCountTextUI: {fileID: 1046414252}
   maxTimePerQuestion: 20
   normalColor: {r: 0.2834639, g: 0.6132076, b: 0.29797533, a: 1}
+  animator: {fileID: 782113054}
+  playerModel: {fileID: 782113052}
 --- !u!4 &807637184
 Transform:
   m_ObjectHideFlags: 0
@@ -2775,10 +2787,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984187757}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}

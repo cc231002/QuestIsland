@@ -20,6 +20,11 @@ public class CylinderMovement : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
+
+        if (animator != null)
+        {
+        animator.SetBool("pressButton", false);
+        }
     }
 
     void Update()

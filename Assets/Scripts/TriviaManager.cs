@@ -62,6 +62,7 @@ public class TriviaManager : MonoBehaviour
 
     public Animator animator;
     public GameObject playerModel;
+    private bool isGameOver = false;
     
 
     void Start()
@@ -78,13 +79,15 @@ public class TriviaManager : MonoBehaviour
         }
 
         if (animator != null)
-    {
-        animator.SetBool("pressButton", false);  // Make sure it starts false
-    }
+        {
+            animator.SetBool("pressButton", false);  // Make sure it starts false
+            animator.Play("Idle");
+        }
     }
 
     void Update()
     {
+        if (isGameOver) return;
         // Keyboard shortcuts to answer for quick testing
         if (Input.GetKeyDown(KeyCode.Alpha1)) CheckAnswer("A", 0);
         if (Input.GetKeyDown(KeyCode.Alpha2)) CheckAnswer("B", 1);
@@ -160,10 +163,10 @@ public class TriviaManager : MonoBehaviour
     void ShowQuestion()
     {
 
-   if (animator != null)
-{
-    animator.SetBool("pressButton", false);
-}
+        if (animator != null)
+        {
+            animator.SetBool("pressButton", false);
+        }
 
         // Reset timer and visuals
         currentTime = maxTimePerQuestion;
@@ -192,6 +195,7 @@ public class TriviaManager : MonoBehaviour
         foreach (var btn in answerButtons)
             btn.interactable = false;
 
+        isGameOver = true;
         StartCoroutine(LoadSceneAfterDelay(3f));
         return;
         }
@@ -228,17 +232,15 @@ public class TriviaManager : MonoBehaviour
     // Modified CheckAnswer to know which button index was clicked
     void CheckAnswer(string selectedOption, int buttonIndex)
     {
-        if (!isTimerRunning) return;
+        if (!isTimerRunning || isGameOver) return;
 
         isTimerRunning = false;
 
         if (animator != null)
-{
-    animator.SetBool("pressButton", true);
-    StartCoroutine(ResetPressButtonAfterDelay(0.5f));
-}
-
-        
+        {
+        animator.SetBool("pressButton", true);
+        StartCoroutine(ResetPressButtonAfterDelay(0.5f));
+        }
 
         Question currentQuestion = selectedQuestions[currentQuestionIndex];
 
@@ -318,13 +320,13 @@ public class TriviaManager : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
-
-
-IEnumerator ResetPressButtonAfterDelay(float delay)
-{
-    yield return new WaitForSeconds(delay);
-    animator.SetBool("pressButton", false);
-}
-
+    IEnumerator ResetPressButtonAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (animator != null)
+        {
+            animator.SetBool("pressButton", false);
+        }
+    }
 
 }
