@@ -146,17 +146,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Complete" ID="{B4438A9C-9D8A-459A-B319-2ACB1E3AC9D9}">
-					<ChildrenList>
-						<Action Name="" ID="{2AEB897B-FD0A-4A69-9450-66ECFE304E0D}" ShortID="344921661">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Complete" ID="{81F64E5A-7CA7-4CE5-B5EC-A315A8A627A0}" WorkUnitID="{ED280D06-0732-471D-A4A3-CC7A648B31EE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Correct" ID="{1BB8ECA0-BA50-4E24-B135-175FA622DB61}">
 					<ChildrenList>
 						<Action Name="" ID="{CEB6C7C7-BB5A-4E37-911A-0D65C5A32CA6}" ShortID="636209646">

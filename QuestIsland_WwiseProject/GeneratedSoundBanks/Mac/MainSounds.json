@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{E0090B4C-0013-DB68-5D15-1A166636BCCA}",
+    "Hash": "{6F0FECE9-F522-C8AC-3FE6-026D2B7AE86A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
     "Media": [
+     {
+      "Id": "2653154",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound.wav",
+      "CachePath": "37/{376758AD-FB70-527C-F18D-1F98733D7ECD}.wem"
+     },
      {
       "Id": "3506575",
       "Language": "SFX",
@@ -46,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "ES_Boots, Concrete, Walk, Close - Epidemic Sound.wav",
       "CachePath": "C7/{C7E9823D-AD8A-5A60-53E0-9172D4F09B00}.wem"
+     },
+     {
+      "Id": "154386619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound.wav",
+      "CachePath": "F3/{F3756BD3-120C-22DD-9CA4-9E9C4F054234}.wem"
      },
      {
       "Id": "534082943",
@@ -127,6 +143,34 @@
       "MediaRefs": [
        {
         "Id": "898154532"
+       }
+      ]
+     },
+     {
+      "Id": "3271090145",
+      "Name": "Play_HeartLose",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_HeartLose",
+      "GUID": "{E7BF6A00-EEB3-465A-A0EB-E93D8F7FEEAC}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3203139",
+      "DurationMax": "1.3203139",
+      "MediaRefs": [
+       {
+        "Id": "154386619"
+       }
+      ]
+     },
+     {
+      "Id": "3022337573",
+      "Name": "Play_Heartup",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Heartup",
+      "GUID": "{ABACC851-DA7F-478D-A34D-C181462C80A9}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1252677",
+      "DurationMax": "1.1252677",
+      "MediaRefs": [
+       {
+        "Id": "2653154"
        }
       ]
      },
@@ -309,6 +353,6 @@
     ]
    }
   ],
-  "FileHash": "{E2F3478F-6BBE-9FF2-8215-AA740490AF42}"
+  "FileHash": "{D7361060-ECCE-A0D1-2B96-3A07B6FDD51D}"
  }
 }

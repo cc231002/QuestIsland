@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 280c6f5ae24de74aae9d7986e8affa9f
     GuidInternal: 
-    m_lastTime: -8584513540983364804
+    m_lastTime: -8584512705539711575
     List:
     - name: MainSounds
       guid: a07104412d9b85438e72ccf7111eb7b2
@@ -241,8 +241,8 @@ MonoBehaviour:
         guid: 51c8acab7fda8d47a34dc181462c80a9
       Path: Events\Default Work Unit\Play_Heartup
       maxAttenuation: 0
-      maxDuration: 0.8847039
-      minDuration: 0.8847039
+      maxDuration: 1.1252677
+      minDuration: 1.1252677
     - name: Play_MainMusic
       guid: 1516d17ad135144495d9541b5a9ad126
       id: 1346240278

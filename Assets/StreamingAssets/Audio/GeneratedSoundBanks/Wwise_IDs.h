@@ -16,7 +16,6 @@ namespace AK
         static const AkUniqueID PLAY_BEE = 3093209662U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUTTONCLICK = 3548535810U;
-        static const AkUniqueID PLAY_COMPLETE = 2401712799U;
         static const AkUniqueID PLAY_CORRECT = 3335480108U;
         static const AkUniqueID PLAY_HEARTLOSE = 3271090145U;
         static const AkUniqueID PLAY_HEARTUP = 3022337573U;

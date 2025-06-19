@@ -268,6 +268,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Heartup" ID="{1D6CBE8E-5CE1-4AC0-B356-8B9D8CF6AAC9}" ShortID="343930177">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
@@ -277,16 +284,11 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound" ID="{46FB956D-E5F3-421D-81FF-E20A0758216D}" ShortID="908556497">
+								<Sound Name="ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound" ID="{45BE8F8D-9EA3-46A3-8B1B-FE1EC49B54A8}" ShortID="640837684">
 									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-100</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -299,26 +301,33 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound" ID="{ABD7704E-38EF-47AD-985E-86594BAD6E1F}">
+										<AudioFileSource Name="ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound" ID="{4F2951DB-2E46-4726-8E13-14B99B03820F}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="0"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.835049218071832"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.12526772824645"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound.wav</AudioFile>
+											<AudioFile>ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="154233695"/>
+												<MediaID ID="2653154"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound" ID="{ABD7704E-38EF-47AD-985E-86594BAD6E1F}" Platform="Linked"/>
+										<ActiveSource Name="ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound" ID="{4F2951DB-2E46-4726-8E13-14B99B03820F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="HeartLose" ID="{9E2F0156-5F5C-4A49-B081-61678D0BD408}" ShortID="191449407">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
@@ -894,57 +903,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Complete" ID="{81F64E5A-7CA7-4CE5-B5EC-A315A8A627A0}" ShortID="765003616">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound" ID="{4DD1839A-024B-4CFB-8FFB-E8A7A2EC9617}" ShortID="630065567">
-									<PropertyList>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>41</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-270</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27284AF3-2466-4A13-88A2-634C5F59E9ED}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound" ID="{981BA54C-2322-4915-A37B-0A145E232CDF}">
-											<Language>SFX</Language>
-											<AudioFile>ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="546345719"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound" ID="{981BA54C-2322-4915-A37B-0A145E232CDF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Wrong" ID="{8EB1F89C-04FB-4571-AD3D-28FF8C7DD510}" ShortID="175784095">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
@@ -1114,6 +1072,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound" ID="{D31E0F22-9E78-4C84-876C-ED5AED42D39F}" ShortID="702766807">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4A804029-01F6-4B49-8875-6CE932ABE766}"/>
@@ -1125,9 +1090,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound" ID="{6EF5C55E-0612-4C09-90D4-329C7B59ED24}">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.418969431161032"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.11339797329414"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.68006305397378"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound.wav</AudioFile>
@@ -1161,13 +1126,23 @@
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.09598</YPos>
+																		<XPos>-0.01</XPos>
+																		<YPos>-13.16022</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>30</XPos>
-																		<YPos>200</YPos>
+																		<XPos>15.11677</XPos>
+																		<YPos>-13.58121</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16.05538</XPos>
+																		<YPos>0.64725</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>3.76379</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
