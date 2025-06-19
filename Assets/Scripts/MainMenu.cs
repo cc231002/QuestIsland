@@ -9,9 +9,11 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        PlayerPrefs.DeleteAll();
         PlayClickSound();
         StartCoroutine(LoadSceneWithDelay());
-
+        
+        
     }
 
     public void RestartGame()
@@ -20,7 +22,6 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(RestartWithDelay());
         HeartManager.Instance.ResetHearts();
         PlayerPrefs.DeleteAll();
-
     }
 
     public void QuitGame()

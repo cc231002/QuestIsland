@@ -24,6 +24,7 @@ public class FloatingHeart : MonoBehaviour
         // Check if the player collided with the heart (assuming player has tag "Player")
         if (other.CompareTag("Player"))
         {
+            GetComponent<CollectibleHeart>().Collect();
             // Make the heart disappear
             gameObject.SetActive(false);
             
