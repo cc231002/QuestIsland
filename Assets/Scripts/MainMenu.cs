@@ -5,7 +5,7 @@ using System.Collections;
 public class MainMenu : MonoBehaviour
 {
     private const string ButtonClickEvent = "Play_ButtonClick";
-    private const float SceneLoadDelay = 0.3f; // Adjust depending on your sound length
+    private const float SceneLoadDelay = 0.3f; // Adjust depending on sound length
 
     public void StartGame()
     {

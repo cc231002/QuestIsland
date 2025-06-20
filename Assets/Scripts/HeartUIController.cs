@@ -50,14 +50,14 @@ public class HeartUIController : MonoBehaviour
 
     if (canvasObj == null)
     {
-        Debug.LogWarning("No canvas found to reparent HeartUI.");
+        //Debug.LogWarning("No canvas found to reparent HeartUI.");
         return;
     }
 
     Canvas targetCanvas = canvasObj.GetComponent<Canvas>();
     if (targetCanvas == null)
     {
-        Debug.LogWarning("Target object doesn't have a Canvas component.");
+        //Debug.LogWarning("Target object doesn't have a Canvas component.");
         return;
     }
 
@@ -78,7 +78,7 @@ public class HeartUIController : MonoBehaviour
         heartCanvas.worldCamera = null;
     }
 
-    Debug.Log($"HeartUI successfully reparented to canvas: {canvasObj.name}");
+    //Debug.Log($"HeartUI successfully reparented to canvas: {canvasObj.name}");
 }
 
 

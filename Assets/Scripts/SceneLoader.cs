@@ -13,7 +13,7 @@ public class SceneLoader : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered booth. Loading scene: " + sceneToLoad + " with category: " + triviaCategory);
+            //Debug.Log("Player entered booth. Loading scene: " + sceneToLoad + " with category: " + triviaCategory);
             PlayerPrefs.SetString("SelectedCategory", triviaCategory); // safe category
             SceneManager.LoadScene(sceneToLoad);
         }

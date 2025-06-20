@@ -24,6 +24,7 @@ public class BoothManager : MonoBehaviour
 
     }
 
+// This method should be called when a booth is completed
     void UpdateBoothProgressText(int currentBooth)
     {
         int completed = Mathf.Clamp(currentBooth - 1, 0, booths.Length - 1);
