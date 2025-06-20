@@ -10,18 +10,18 @@
     "Type": "User",
     "GUID": "{0A9012B5-8A20-4651-B360-353E5D05D498}",
     "Language": "SFX",
-    "Hash": "{3477672A-9703-108E-B26C-664925D99AAC}",
+    "Hash": "{7A300ECE-BFD9-B8E7-F7D0-D8551C94A0D6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Trivia",
     "ShortName": "Trivia",
     "Path": "Trivia.bnk",
     "Media": [
      {
-      "Id": "154233695",
+      "Id": "2653154",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound.wav",
-      "CachePath": "D2/{D2B4B6D3-2E2E-0C51-EC49-CC3F791C0960}.wem"
+      "ShortName": "ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound.wav",
+      "CachePath": "F7/{F74D6A58-A178-1C32-E89B-EC51B8937367}.wem"
      },
      {
       "Id": "154386619",
@@ -56,14 +56,6 @@
       "CachePath": "B2/{B2D1C188-F0A5-0738-3D42-585C784DF6E3}.wem"
      },
      {
-      "Id": "546345719",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound.wav",
-      "CachePath": "FD/{FD818B34-FF11-8A65-3916-E31627C269B6}.wem"
-     },
-     {
       "Id": "819777711",
       "Language": "SFX",
       "Streaming": "false",
@@ -77,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound.wav",
-      "CachePath": "27/{27CF7D70-A9A6-5884-DC21-79E9853DF10C}.wem"
+      "CachePath": "9C/{9C5B8261-B803-CB97-ACF4-C8A7DE63899E}.wem"
      },
      {
       "Id": "918913375",
@@ -97,20 +89,6 @@
      }
     ],
     "Events": [
-     {
-      "Id": "2401712799",
-      "Name": "Play_Complete",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Complete",
-      "GUID": "{B4438A9C-9D8A-459A-B319-2ACB1E3AC9D9}",
-      "DurationType": "OneShot",
-      "DurationMin": "3.2428699",
-      "DurationMax": "3.2428699",
-      "MediaRefs": [
-       {
-        "Id": "546345719"
-       }
-      ]
-     },
      {
       "Id": "3335480108",
       "Name": "Play_Correct",
@@ -151,11 +129,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Heartup",
       "GUID": "{ABACC851-DA7F-478D-A34D-C181462C80A9}",
       "DurationType": "OneShot",
-      "DurationMin": "0.8847039",
-      "DurationMax": "0.8847039",
+      "DurationMin": "1.1252677",
+      "DurationMax": "1.1252677",
       "MediaRefs": [
        {
-        "Id": "154233695"
+        "Id": "2653154"
        }
       ]
      },
@@ -165,8 +143,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Timer",
       "GUID": "{C96740F3-AD81-46FB-ABE2-3D8AA9BA3320}",
       "DurationType": "OneShot",
-      "DurationMin": "0.41896942",
-      "DurationMax": "0.41896942",
+      "DurationMin": "0.56666505",
+      "DurationMax": "0.56666505",
       "MediaRefs": [
        {
         "Id": "880961620"
@@ -213,6 +191,6 @@
     ]
    }
   ],
-  "FileHash": "{24B95DCD-DA44-A1E0-C0E4-E5609AA15212}"
+  "FileHash": "{6CCC6921-FF08-9C32-11C6-52929385CA11}"
  }
 }

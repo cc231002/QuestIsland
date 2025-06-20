@@ -22,8 +22,8 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18.0614</XPos>
-											<YPos>-1.96598</YPos>
+											<XPos>44.20001</XPos>
+											<YPos>-5.63919</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
@@ -93,6 +93,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="Bee" ID="{11599738-9353-4E26-9A8F-357E4B37D92D}" ShortID="705381766">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="15"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -108,7 +111,7 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>15</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

@@ -11,6 +11,8 @@
 						<ObjectRef Name="Play_Wind" ID="{4355965E-3F98-43B5-9F71-577445E7172F}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainMusic" ID="{7AD11615-35D1-4414-95D9-541B5A9AD126}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Walk" ID="{F50EB312-2780-447C-A70D-683547E5C1EE}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HeartLose" ID="{E7BF6A00-EEB3-465A-A0EB-E93D8F7FEEAC}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Heartup" ID="{ABACC851-DA7F-478D-A34D-C181462C80A9}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_WaterFall" ID="{435D3D91-4A8A-47BA-8B00-076FC25966C7}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Waves" ID="{0E2F4936-22C7-48AF-B85D-56DD99E9C05B}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
@@ -29,7 +31,6 @@
 				</SoundBank>
 				<SoundBank Name="Trivia" ID="{0A9012B5-8A20-4651-B360-353E5D05D498}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Complete" ID="{B4438A9C-9D8A-459A-B319-2ACB1E3AC9D9}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HeartLose" ID="{E7BF6A00-EEB3-465A-A0EB-E93D8F7FEEAC}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Wrong" ID="{71704824-1B78-46CE-9560-9B3FB2F1CBBE}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Timer" ID="{C96740F3-AD81-46FB-ABE2-3D8AA9BA3320}" WorkUnitID="{1D9C1C09-69EB-4941-A3D1-78E86BBB042B}" Origin="Manual" Filter="7"/>

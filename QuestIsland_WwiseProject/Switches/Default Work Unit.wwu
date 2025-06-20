@@ -9,6 +9,7 @@
 						<Switch Name="Stone" ID="{0CBB00D9-F5F6-4CF8-8240-3483F3EC95F6}"/>
 						<Switch Name="Wood" ID="{5808ABF4-ED69-473E-94A2-AE27998939E0}"/>
 						<Switch Name="Sand" ID="{2F61A5C5-ECBF-4F16-80B5-9F5EEBE2C031}"/>
+						<Switch Name="Water" ID="{BACF95B8-0C5F-4D0B-9F76-893BADFD5CA7}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

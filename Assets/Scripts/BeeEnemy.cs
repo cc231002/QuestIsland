@@ -24,6 +24,9 @@ public class BeeEnemy : MonoBehaviour
     private float chaseTimer = 0f;
     private CylinderMovement playerMovement;
 
+    // Wwise sound tracking
+    private uint flyingSoundId = 0;
+
     enum BeeState
     {
         Patrolling,
@@ -47,6 +50,8 @@ public class BeeEnemy : MonoBehaviour
 
         playerMovement = player.GetComponent<CylinderMovement>();
 
+        // Start flying sound
+        flyingSoundId = AkUnitySoundEngine.PostEvent("Play_Bee", gameObject);
     }
 
     void Update()
@@ -71,7 +76,7 @@ public class BeeEnemy : MonoBehaviour
                 break;
         }
 
-        ApplyFloating(); // Floating logic is handled within movement functions
+        ApplyFloating();
     }
 
     void Patrol()
@@ -110,7 +115,6 @@ public class BeeEnemy : MonoBehaviour
         Vector3 beeCenter = beeCollider != null ? beeCollider.bounds.center : transform.position;
 
         float distanceToPlayer = Vector3.Distance(beeCenter, playerCenter);
-        Debug.Log("Chasing player - Distance: " + distanceToPlayer + ", Time: " + chaseTimer);
 
         if (distanceToPlayer > 0.7f)
         {
@@ -122,7 +126,6 @@ public class BeeEnemy : MonoBehaviour
 
         if (distanceToPlayer <= 0.983f)
         {
-            Debug.Log("Starting attack!");
             Attack();
         }
         else if (chaseTimer >= chaseDuration)
@@ -135,23 +138,20 @@ public class BeeEnemy : MonoBehaviour
     {
         if (playerMovement != null)
         {
-            playerMovement.canMove = false; // Disable player movement
+            playerMovement.canMove = false;
         }
 
         currentState = BeeState.Attacking;
-        Debug.Log("Attack() called");
-
         animator.SetTrigger("AttackTrigger");
-        Debug.Log("Player loses a life!"); // replace with actual damage logic
         HeartManager.Instance.LoseHeart();
-        Invoke("FinishAttack", 1.5f); // attack duration
+        Invoke("FinishAttack", 1.5f);
     }
 
     void FinishAttack()
     {
         if (playerMovement != null)
         {
-            playerMovement.canMove = true; // Re-enable movement
+            playerMovement.canMove = true;
         }
 
         currentState = BeeState.ReturningToPatrol;
@@ -160,7 +160,6 @@ public class BeeEnemy : MonoBehaviour
     void ReturnToPatrol()
     {
         basePosition = Vector3.MoveTowards(basePosition, returnPosition, speed * Time.deltaTime);
-
         RotateTowards(returnPosition);
 
         if (Vector3.Distance(basePosition, returnPosition) < 0.05f)
@@ -185,38 +184,16 @@ public class BeeEnemy : MonoBehaviour
 
     void ApplyFloating()
     {
-        // Floating is applied within movement logic
+        // Already applied inside movement methods
     }
 
-    // Optional: Gizmos for debugging
-    // void OnDrawGizmos() { ... }
-
-
-    // void OnDrawGizmos()
-    // {
-    //     if (pointA != null && pointB != null)
-    //     {
-    //         Gizmos.color = Color.yellow;
-    //         Gizmos.DrawSphere(pointA.position, 0.2f);
-    //         Gizmos.DrawSphere(pointB.position, 0.2f);
-    //         Gizmos.color = Color.cyan;
-    //         Gizmos.DrawLine(pointA.position, pointB.position);
-    //     }
-
-    //     if (player != null)
-    //     {
-    //         Gizmos.color = Color.red;
-    //         Gizmos.DrawWireSphere(transform.position, detectionRange);
-
-    //         Collider playerCollider = player.GetComponent<Collider>();
-    //         if (playerCollider != null)
-    //         {
-    //             Vector3 center = playerCollider.bounds.center;
-    //             Gizmos.color = Color.green;
-    //             Gizmos.DrawWireSphere(center, 0.2f); // show center point
-    //             Gizmos.color = new Color(1, 0.5f, 0f, 0.3f);
-    //             Gizmos.DrawLine(transform.position, center);
-    //         }
-    //     }
-    // }
+    void OnDisable()
+    {
+        // Stop sound when bee is disabled
+        if (flyingSoundId != 0)
+        {
+            AkUnitySoundEngine.StopPlayingID(flyingSoundId);
+            flyingSoundId = 0;
+        }
+    }
 }

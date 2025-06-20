@@ -16,7 +16,6 @@ namespace AK
         static const AkUniqueID PLAY_BEE = 3093209662U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUTTONCLICK = 3548535810U;
-        static const AkUniqueID PLAY_COMPLETE = 2401712799U;
         static const AkUniqueID PLAY_CORRECT = 3335480108U;
         static const AkUniqueID PLAY_HEARTLOSE = 3271090145U;
         static const AkUniqueID PLAY_HEARTUP = 3022337573U;
@@ -45,6 +44,7 @@ namespace AK
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID SAND = 803837735U;
                 static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID WATER = 2654748154U;
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace SURFACE

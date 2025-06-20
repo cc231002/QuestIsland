@@ -1,7 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	92581801	Play_Wrong			\Default Work Unit\Play_Wrong	
 	1573978988	Play_TriviaMusic			\Default Work Unit\Play_TriviaMusic	
-	2401712799	Play_Complete			\Default Work Unit\Play_Complete	
 	3022337573	Play_Heartup			\Default Work Unit\Play_Heartup	
 	3271090145	Play_HeartLose			\Default Work Unit\Play_HeartLose	
 	3335480108	Play_Correct			\Default Work Unit\Play_Correct	
@@ -11,14 +10,13 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2486342905	TimeLeft			\Default Work Unit\TimeLeft	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	154233695	ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\D2\{D2B4B6D3-2E2E-0C51-EC49-CC3F791C0960}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Action\Heartup\ES_Notification, Video Game, Win, Positive, Happy 02 - Epidemic Sound		1787
+	2653154	ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\F7\{F74D6A58-A178-1C32-E89B-EC51B8937367}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Action\Heartup\ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound		3821
 	154386619	ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\F3\{F3756BD3-120C-22DD-9CA4-9E9C4F054234}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Action\HeartLose\ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound		2178
 	190345228	ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound_01	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\04\{046117D5-EDC8-1ECE-D763-CD73BB648511}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Correct\ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound_01		7603
 	288210764	ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound_02	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\E3\{E3A4257C-452F-62CF-DEA4-6D3D492FA603}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Correct\ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound_02		7074
 	290746911	ES_Game, Jingle, Chime, Negative 02 - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\B2\{B2D1C188-F0A5-0738-3D42-585C784DF6E3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Wrong\ES_Game, Jingle, Chime, Negative 02 - Epidemic Sound		10892
-	546345719	ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\FD\{FD818B34-FF11-8A65-3916-E31627C269B6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Complete\ES_Delayed, High Pitched, Correct, Positive 02 - Epidemic Sound		19595
 	819777711	SDR2 OST_ -1-08- Ms_ Monomi's Practice Lesson	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\D3\{D34B5BFC-CB16-82CC-1FB0-F4871E8A99A0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Music\SDR2 OST_ -1-08- Ms_ Monomi's Practice Lesson		2395281
-	880961620	ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\27\{27CF7D70-A9A6-5884-DC21-79E9853DF10C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Timer\ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound		3408
+	880961620	ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\9C\{9C5B8261-B803-CB97-ACF4-C8A7DE63899E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Timer\ES_Countdown, Get Set, Start, Smooth, Video Game 02 - Epidemic Sound		4296
 	918913375	ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\57\{57985BD0-F090-E382-C6F9-F487917A9BBB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Correct\ES_Success, Reward, Bright, Happy Twinkle, Short - Epidemic Sound		7361
 	984098091	Gourmet Race-Super Smash Bros_ Ultimate(Kirby Super Star)	C:\Users\Otthon\Desktop\mapa\CCL4\QuestIsland\QuestIsland\QuestIsland_WwiseProject\.cache\8E\{8E88E1AF-7A9E-B5EF-3318-33E399FB1E33}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Trivia\Music\Gourmet Race-Super Smash Bros_ Ultimate(Kirby Super Star)		1193533
 

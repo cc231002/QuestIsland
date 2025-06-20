@@ -10,18 +10,26 @@
     "Type": "User",
     "GUID": "{410471A0-9B2D-4385-8E72-CCF7111EB7B2}",
     "Language": "SFX",
-    "Hash": "{1E76258D-5A8E-0C6C-6BDB-B3153308FEFF}",
+    "Hash": "{88FC4C56-D9B7-3D51-598F-D0F1BBC9EC6A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainSounds",
     "ShortName": "MainSounds",
     "Path": "MainSounds.bnk",
     "Media": [
+     {
+      "Id": "2653154",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Motion, Game, Jingle, Positive, Event 03 - Epidemic Sound.wav",
+      "CachePath": "F7/{F74D6A58-A178-1C32-E89B-EC51B8937367}.wem"
+     },
      {
       "Id": "3506575",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Desert, Light Whistling, Wind Gusts - Epidemic Sound.wav",
-      "CachePath": "71/{71B27A93-BB8A-41D7-37C3-564848BFD95F}.wem"
+      "CachePath": "96/{9698759F-14F8-3C5C-8282-F39309430778}.wem"
      },
      {
       "Id": "16778294",
@@ -46,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "ES_Boots, Concrete, Walk, Close - Epidemic Sound.wav",
       "CachePath": "C7/{C7E9823D-AD8A-5A60-53E0-9172D4F09B00}.wem"
+     },
+     {
+      "Id": "154386619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Game Over, Defeat, Loss, Negative, Notification 01 - Epidemic Sound.wav",
+      "CachePath": "F3/{F3756BD3-120C-22DD-9CA4-9E9C4F054234}.wem"
      },
      {
       "Id": "534082943",
@@ -85,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ES_Meadow, Day, Birds, Insects, Yellowstone National Park, Wyoming - Epidemic Sound.wav",
-      "CachePath": "48/{483C3BAD-55C3-CA6E-8EAF-6C449D31BCF7}.wem"
+      "CachePath": "DA/{DAC0B08A-4724-1F58-9166-10E5A91DDCAD}.wem"
      },
      {
       "Id": "1014171501",
@@ -94,6 +110,14 @@
       "Location": "Memory",
       "ShortName": "ES_Walk, Grass, Mono - Epidemic Sound.wav",
       "CachePath": "48/{481D23CC-7574-34B3-77A1-512DB61AF64F}.wem"
+     },
+     {
+      "Id": "1049745348",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ES_Walking Through Water, Splashes - Epidemic Sound.wav",
+      "CachePath": "A0/{A0AA6EBF-0C49-25DC-85E8-AF5B2D11BBFA}.wem"
      }
     ],
     "Events": [
@@ -102,7 +126,7 @@
       "Name": "Play_Bee",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Bee",
       "GUID": "{E45C54EA-E9E9-4213-BA2C-0A3CE174C3D8}",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "15",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -115,12 +139,38 @@
       "Name": "Play_Birds",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Birds",
       "GUID": "{8DE561E1-FCDC-4268-9622-EBC114F0669E}",
-      "DurationType": "OneShot",
-      "DurationMin": "202.816",
-      "DurationMax": "202.816",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "898154532"
+       }
+      ]
+     },
+     {
+      "Id": "3271090145",
+      "Name": "Play_HeartLose",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_HeartLose",
+      "GUID": "{E7BF6A00-EEB3-465A-A0EB-E93D8F7FEEAC}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3203139",
+      "DurationMax": "1.3203139",
+      "MediaRefs": [
+       {
+        "Id": "154386619"
+       }
+      ]
+     },
+     {
+      "Id": "3022337573",
+      "Name": "Play_Heartup",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Heartup",
+      "GUID": "{ABACC851-DA7F-478D-A34D-C181462C80A9}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1252677",
+      "DurationMax": "1.1252677",
+      "MediaRefs": [
+       {
+        "Id": "2653154"
        }
       ]
      },
@@ -154,6 +204,19 @@
         "MediaRefs": [
          {
           "Id": "1014171501"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2654748154",
+         "GUID": "{BACF95B8-0C5F-4D0B-9F76-893BADFD5CA7}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "1049745348"
          }
         ]
        },
@@ -230,9 +293,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Wind",
       "GUID": "{4355965E-3F98-43B5-9F71-577445E7172F}",
       "MaxAttenuation": "60",
-      "DurationType": "OneShot",
-      "DurationMin": "212.8765",
-      "DurationMax": "212.8765",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "3506575"
@@ -276,6 +337,12 @@
         "GUID": "{5808ABF4-ED69-473E-94A2-AE27998939E0}"
        },
        {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Water",
+        "GUID": "{BACF95B8-0C5F-4D0B-9F76-893BADFD5CA7}"
+       },
+       {
         "Id": "4248645337",
         "Name": "Grass",
         "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass",
@@ -286,6 +353,6 @@
     ]
    }
   ],
-  "FileHash": "{FF313451-3DCE-5530-C647-D6AD20616DC3}"
+  "FileHash": "{29A700E3-B965-10CB-5A9D-FACFF90F1188}"
  }
 }

@@ -6,7 +6,8 @@
 				<GameParameter Name="TimeLeft" ID="{9FA3B2FA-E344-42F3-8580-FCE057BA195E}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="30"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+						<Property Name="Min" Type="Real64" Value="-0.01"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

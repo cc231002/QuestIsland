@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class HeartManager : MonoBehaviour
@@ -29,12 +28,29 @@ public class HeartManager : MonoBehaviour
         if (CurrentHearts > 0)
         {
             CurrentHearts--;
+
+            // 🔊 Play heart lose sound
+            AkUnitySoundEngine.PostEvent("Play_HeartLose", gameObject);
+
             Debug.Log($"Heart lost! Remaining: {CurrentHearts}");
 
             if (CurrentHearts <= 0)
             {
                 HandleGameOver();
             }
+        }
+    }
+
+    public void GainHeart()
+    {
+        if (CurrentHearts < maxHearts)
+        {
+            CurrentHearts++;
+
+            // 🔊 Play heart gain sound
+            AkUnitySoundEngine.PostEvent("Play_Heartup", gameObject);
+
+            Debug.Log("Gained a heart!");
         }
     }
 
@@ -48,12 +64,4 @@ public class HeartManager : MonoBehaviour
         Debug.Log("Game Over!");
         SceneManager.LoadScene("GameOver");
     }
-    
-    public void GainHeart()
-{
-    CurrentHearts = Mathf.Min(CurrentHearts + 1, maxHearts); 
-    Debug.Log("Gained a heart!");
-}
-
-   
 }
