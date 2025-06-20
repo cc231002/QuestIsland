@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{0A9012B5-8A20-4651-B360-353E5D05D498}",
     "Language": "SFX",
-    "Hash": "{7A300ECE-BFD9-B8E7-F7D0-D8551C94A0D6}",
+    "Hash": "{7E2617E4-0058-4C92-1138-B53B6B9863E2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Trivia",
     "ShortName": "Trivia",
     "Path": "Trivia.bnk",
@@ -191,6 +191,6 @@
     ]
    }
   ],
-  "FileHash": "{6CCC6921-FF08-9C32-11C6-52929385CA11}"
+  "FileHash": "{97291188-991B-1FCD-26E8-C96BF147A8BD}"
  }
 }
