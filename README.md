@@ -1,5 +1,49 @@
 # QuestIsland
-A simple 3D game made with Unity that includes general education and trivia
+Quest Island is a cozy 3D educational trivia game made with Unity, where players explore a tropical island, collect hearts, enter cloud-shaped booths to answer themed questions across six topics. Each booth includes three questions with increasing difficulty levels, while players must also avoid bees that can sting and reduce health.
+
+## 🎮 How to Run Quest Island - User Guideline
+
+### Option 1: Run the Executable
+
+If you only want to play the game (no Unity or setup needed):
+
+1. Download the build from our OneDrive: [Quest Island Executable](https://fhstp-my.sharepoint.com/personal/lbwu_fhstp_ac_at/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Flbwu%5Ffhstp%5Fac%5Fat%2FDocuments%2FFH%2FBCC%2Flecture%2FCCL4%2FSS2025%2FUpload&ga=1) 
+2. Extract the `.zip` file
+3. Open the extracted folder
+4. Double-click on `QuestIsland.exe` to launch the game
+
+---
+
+### Option 2: Run from Source (Unity Project)
+
+If you want to open, test, or edit the game inside Unity:
+
+#### Requirements
+- Unity Editor (6000.0.47f or higher)
+- Wwise installed and integrated
+- Git (to clone the repository)
+
+#### Steps
+
+1. Clone this repository
+2. Open **Unity Hub**
+3. Click **Open Project** and select the cloned folder
+4. Wait for the project to compile
+5. Verify Wwise is working:
+   - Open the **Wwise Picker** in Unity
+   - Re-link the Wwise project if needed
+   - Re-generate SoundBanks if missing
+6. In the Project tab, open `Assets/Scenes/StartScene.unity`
+7. Press **Play** in the Unity Editor to test the game
+
+---
+
+### 🎮 Controls
+
+- `W A S D`: Move
+- `Mouse`: Look around
+- Avoid bees, collect hearts, and answer trivia questions to win!
+
 
 ## First Mockups
 
